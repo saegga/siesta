@@ -13,7 +13,8 @@ sass.compiler = require('node-sass');
 
 const cssFiles = [
 	'./src/css/main.css',
-	'./src/css/media.css'
+	'./src/css/media.css',
+	'./src/css/first_page.css'
 ];
 const jsFiles = [
 	'./src/js/lib.js',
@@ -51,13 +52,14 @@ function styles(){
 function stylesOrig(){
 	return gulp.src(cssFiles)
 		.pipe(concat('template.css'))
-		.pipe(gulp.dest('./build/css/'))
+		.pipe(gulp.dest('./build/css/'), {nocomment: true})
 
 		.pipe(autoprefixer({
 		       browsers: ['last 40 versions'],
 		       cascade: false
 		    })) 
-		.pipe(gulp.dest('./build/css/'));
+		.pipe(gulp.dest('./build/css/'))
+		.pipe(browserSync.stream());
 }
 // таск для скриптов
 function scripts(){
@@ -94,6 +96,7 @@ function watch(){
 	gulp.watch('./sass/**/*.scss', sassPipe);
 	// следить за css файлами
 	gulp.watch('./src/css/**/*.css', styles);
+	gulp.watch('./src/css/**/*.css', stylesOrig);
 	// следить за js
 	gulp.watch('./src/js/**/*.js', scripts);
 	// следить за изменениями html
@@ -111,7 +114,7 @@ gulp.task('modern', modern);
 gulp.task('watch', watch);
 
 // запуск тасков в опр порядке, и параллельно - parallel
-gulp.task('build', gulp.series(clean, gulp.parallel(styles,stylesOrig ,scripts, modern)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesOrig ,scripts, modern)));
 // таск запускает по очереди сборку и обновление
 gulp.task('dev', gulp.series('build', 'watch'));
 

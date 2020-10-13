@@ -130,6 +130,10 @@
 	padding-top: 35px;
 }
 
+.about_facts-slider .slick-slide{
+	outline: none;
+}
+
 .slider_facts-arrow{}
 .slider_facts-arrow .left-arrow,
 .slider_facts-arrow .right-arrow
@@ -173,4 +177,25 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+/**/
+
+.gallery_pubs{
+	margin-top: 120px;
+	margin-left: 30px;
+}
+.gallery_pubs-item{
+	position: relative;
+	width: 400px;
+	height: 300px;
+}
+.gallery_pubs-item.slick-slide{
+	margin-right: 30px;
+}
+.gallery_pubs-item a{
+	display: block;
+}
+.gallery_pubs-descr{
+	position: absolute;
+}
+
 /**/

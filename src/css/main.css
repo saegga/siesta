@@ -7,3 +7,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Corinthia';
+	src: url('../../src/fonts/Corinthia.ttf');
+	/*url('../../src/fonts/Corinthia.ttf') format('truetype');*/
+	font-weight: normal;
+	font-style: normal;
+}

@@ -183,6 +183,7 @@ p{
 /**/
 
 .gallery_pubs{
+    position: relative;
 	margin-top: 120px;
 	margin-left: 30px;
 }
@@ -265,12 +266,18 @@ p{
 .gallery_pubs .slick-dots li > button:focus{
     outline: none;
 }
+.gallery_pubs_fon{
+    position: absolute;
+    right: 0;
+    top: -360px;
+}
 /**/
-
 .reviews{
     position: relative;
+}
+.reviews_container{
+    position: relative;
     width: 1170px;
-    border: 1px solid;
     margin: 30px auto 0 auto;
 }
 .reviews_title{
@@ -402,4 +409,35 @@ p{
     text-align: center;
     padding-top: 80px;
 }
-/*.reviews_slider .left-arrow{}*/
+.reviews_fon{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+/**/
+
+.meeting{
+    position: relative;
+}
+.meeting_container{
+    width: 1170px;
+}
+
+.choice_pub{
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+}
+.choice_pub-item{
+    flex-basis: 600px;
+    flex-shrink: 1;
+    margin-right: 30px;
+}
+.choice_pub-item:last-child{
+    margin-right: 0;
+}
+.choice_pub-item img{
+    max-width: 100%;
+}
+
+/**/

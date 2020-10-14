@@ -216,6 +216,7 @@ p{
 /**/
 
 .gallery_pubs{
+    position: relative;
 	margin-top: 120px;
 	margin-left: 30px;
 }
@@ -299,12 +300,18 @@ p{
 .gallery_pubs .slick-dots li > button:focus{
     outline: none;
 }
+.gallery_pubs_fon{
+    position: absolute;
+    right: 0;
+    top: -360px;
+}
 /**/
-
 .reviews{
     position: relative;
+}
+.reviews_container{
+    position: relative;
     width: 1170px;
-    border: 1px solid;
     margin: 30px auto 0 auto;
 }
 .reviews_title{
@@ -447,4 +454,45 @@ p{
     text-align: center;
     padding-top: 80px;
 }
-/*.reviews_slider .left-arrow{}*/
+.reviews_fon{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+/**/
+
+.meeting{
+    position: relative;
+}
+.meeting_container{
+    width: 1170px;
+}
+
+.choice_pub{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+.choice_pub-item{
+    -webkit-flex-basis: 600px;
+    -ms-flex-preferred-size: 600px;
+    flex-basis: 600px;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin-right: 30px;
+}
+.choice_pub-item:last-child{
+    margin-right: 0;
+}
+.choice_pub-item img{
+    max-width: 100%;
+}
+
+/**/

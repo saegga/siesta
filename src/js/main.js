@@ -8,7 +8,7 @@ $(document).ready(function(){
         nextArrow: '<button id="next" type="button" class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
     });
 
-    $('.gallery_pubs').slick({
+    $('.gallery_pubs-slider').slick({
         infinite: true,
         variableWidth: true,
         arrows: false,

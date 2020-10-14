@@ -13,6 +13,9 @@ $(document).ready(function(){
         variableWidth: true,
         arrows: false,
         dots: true,
+        customPaging : function(slider, i) {
+            return '<button class="tab"></button>';
+        },
     });
 
 });

@@ -422,6 +422,7 @@ p{
 }
 .meeting_container{
     width: 1170px;
+    margin: 0 auto;
 }
 .meeting_title{
     font-size: 24px;
@@ -452,5 +453,36 @@ p{
 .choice_pub-item img{
     max-width: 100%;
 }
-
+.more_us{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+    padding: 30px 0 35px 0;
+}
+.more_us-items{
+    display: flex;
+    flex-basis: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.more_us > p{
+    font-family: 'Corinthia', sans-serif;
+    font-size: 48px;
+    color: #180004;
+}
+.more_us-item span{
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    /*font-family: 'Exo', sans-serif;*/
+    font-family: 'Exo 2', sans-serif;
+    background-image: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+    color: transparent;
+    -webkit-background-clip: text;
+    max-width: 90px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
 /**/

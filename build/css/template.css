@@ -452,7 +452,7 @@ p{
     color: #180004;
     line-height: 1;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 65px;
 }
 .reviews_fon{
     position: absolute;
@@ -463,9 +463,22 @@ p{
 
 .meeting{
     position: relative;
+    padding-top: 50px;
 }
 .meeting_container{
     width: 1170px;
+}
+.meeting_title{
+    font-size: 24px;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+    line-height: 1;
+}
+.meeting_subtitle{
+    font-size: 72px;
+    font-family: 'Corinthia', sans-serif;
+    text-align: center;
+    line-height: 0.7;
 }
 
 .choice_pub{
@@ -477,7 +490,7 @@ p{
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 0 30px;
+    margin: 55px 30px 0 30px;
 }
 .choice_pub-item{
     -webkit-flex-basis: 600px;

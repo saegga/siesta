@@ -24,9 +24,26 @@ $(document).ready(function(){
     });
 
     var topSliderActive = false;
+    var choicePubActive = false;
 
-    function checkTopSlider() {
+    function checkSlider() {
         if($(window).width() < 768){
+
+            if(choicePubActive === false){
+                $('.choice_pub').slick({
+                    infinite: true,
+                    variableWidth: true,
+                    arrows: false,
+                    dots: false,
+                });
+                choicePubActive = true
+            }else{
+                if(choicePubActive === true){
+                    $('.choice_pub').slick("unslick");
+                    choicePubActive = false;
+                }
+            }
+
             if(topSliderActive === false){
                 $('.bar_item_slider').slick({
                     dots: false,
@@ -45,8 +62,8 @@ $(document).ready(function(){
         }
     }
 
-    checkTopSlider();
+    checkSlider();
     $(window).on('resize', function () {
-        checkTopSlider()
+        checkSlider()
     })
 });

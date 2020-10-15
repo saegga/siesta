@@ -14,8 +14,10 @@ sass.compiler = require('node-sass');
 const cssFiles = [
 	'./src/css/main.css',
 	'./src/css/media.css',
-	'./src/css/first_page.css'
+	'./src/css/first_page.css',
 ];
+const fidelCss = './src/css/fidel.css';
+
 const jsFiles = [
 	'./src/js/lib.js',
 	'./src/js/main.js'
@@ -47,8 +49,40 @@ function styles(){
     .pipe(cleanCSS({level: 2}))
     .pipe(gulp.dest('./build/css/'))
     .pipe(browserSync.stream());
-
 }
+
+function stylesFidel(){
+	return gulp.src(fidelCss)
+	// объединить файлы
+		.pipe(concat('fidel.css'))
+		.pipe(gulp.dest('./build/css'))
+
+		// Добавить префиксы
+		.pipe(autoprefixer({
+			browsers: ['last 40 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('./build/css'))
+
+
+		// минификация
+		.pipe(cleanCSS({level: 2}))
+		.pipe(gulp.dest('./build/css/'))
+		.pipe(browserSync.stream());
+}
+function stylesOrigFidel(){
+	return gulp.src(fidelCss)
+		.pipe(concat('template_fidel.css'))
+		.pipe(gulp.dest('./build/css/'), {nocomment: true})
+
+		.pipe(autoprefixer({
+			browsers: ['last 40 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('./build/css/'))
+		.pipe(browserSync.stream());
+}
+
 function stylesOrig(){
 	return gulp.src(cssFiles)
 		.pipe(concat('template.css'))
@@ -114,7 +148,7 @@ gulp.task('modern', modern);
 gulp.task('watch', watch);
 
 // запуск тасков в опр порядке, и параллельно - parallel
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesOrig ,scripts, modern)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesFidel,  stylesOrig, stylesOrigFidel ,scripts, modern)));
 // таск запускает по очереди сборку и обновление
 gulp.task('dev', gulp.series('build', 'watch'));
 

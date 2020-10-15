@@ -558,7 +558,7 @@ footer{}
     padding-left: 15px;
 }
 .foot_icons a{
-    padding-right: 15px;
+    padding-right: 25px;
 }
 .foot_icons a:last-child{
     padding-right: 0;
@@ -839,10 +839,15 @@ footer{}
     }
     .more_us{
         display: block;
+        padding: 15px 0 25px;
     }
     .more_us > p{
         text-align: center;
         font-size: 36px;
+        padding-bottom: 10px;
+    }
+    .more_us-items{
+        padding: 0 15px;
     }
     .more_us-item{
         text-align: center;
@@ -851,23 +856,30 @@ footer{}
         display: block;
         margin-left: 0;
         text-align: center;
-        padding-top: 22px;
+        padding-top: 10px;
     }
     .more_us_img img{
-        width: 40px;
-        height: 30px;
+        width: 50px;
+        height: 40px;
     }
     .footer_container{
-        margin: 0 10px;
+        border: unset;
         flex-flow: column;
-        padding: 10px 0 20px 0;
+        padding: 0px 0 20px 0;
+    }
+    .footer_container:after{
+        content: '';
+        height: 1px;
+        background: #D0D0D0;
+        margin: 0 10px;
     }
     .socials{
         margin: 0 auto;
+        padding-top: 10px;
     }
     .company_name{
         text-align: center;
-        margin-top: 30px;
+        margin-top: 20px;
         max-width: unset;
         font-size: 10px;
     }

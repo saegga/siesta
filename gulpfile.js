@@ -17,6 +17,7 @@ const cssFiles = [
 	'./src/css/first_page.css',
 ];
 const fidelCss = './src/css/fidel.css';
+const fidelJs = './src/js/fidel.js';
 
 const jsFiles = [
 	'./src/js/lib.js',
@@ -104,6 +105,15 @@ function scripts(){
 	.pipe(gulp.dest('./build/js'))
 	.pipe(browserSync.stream());
 }
+
+function scriptFidel(){
+	return gulp.src(fidelJs)
+		.pipe(concat('fidel.js'))
+		.pipe(uglify())
+
+		.pipe(gulp.dest('./build/js'))
+		.pipe(browserSync.stream());
+}
 // modernizer
 function modern(){
 	return gulp.src('./src/*.js')
@@ -145,6 +155,7 @@ gulp.task('stylesOrig', stylesOrig);
 gulp.task('stylesFidel', stylesFidel);
 gulp.task('stylesOrigFidel', stylesOrigFidel);
 gulp.task('scripts', scripts);
+gulp.task('scriptFidel', scriptFidel);
 gulp.task('del', clean);
 gulp.task('minImage', minImage);
 gulp.task('modern', modern);
@@ -152,7 +163,7 @@ gulp.task('modern', modern);
 gulp.task('watch', watch);
 
 // запуск тасков в опр порядке, и параллельно - parallel
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesFidel,  stylesOrig, stylesOrigFidel ,scripts, modern)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesFidel,  stylesOrig, stylesOrigFidel, scriptFidel, scripts, modern)));
 // таск запускает по очереди сборку и обновление
 gulp.task('dev', gulp.series('build', 'watch'));
 

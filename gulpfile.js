@@ -131,6 +131,8 @@ function watch(){
 	// следить за css файлами
 	gulp.watch('./src/css/**/*.css', styles);
 	gulp.watch('./src/css/**/*.css', stylesOrig);
+	gulp.watch('./src/css/**/*.css', stylesFidel);
+	gulp.watch('./src/css/**/*.css', stylesOrigFidel);
 	// следить за js
 	gulp.watch('./src/js/**/*.js', scripts);
 	// следить за изменениями html
@@ -140,6 +142,8 @@ function watch(){
 gulp.task('sass', sassPipe);
 gulp.task('styles', styles);
 gulp.task('stylesOrig', stylesOrig);
+gulp.task('stylesFidel', stylesFidel);
+gulp.task('stylesOrigFidel', stylesOrigFidel);
 gulp.task('scripts', scripts);
 gulp.task('del', clean);
 gulp.task('minImage', minImage);

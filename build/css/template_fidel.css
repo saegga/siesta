@@ -267,23 +267,23 @@ header{
 .header_right_top .call_us{
     float: left;
     margin-left: 25px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    background-color: #E8C47F;
     height: 40px;
 }
-.header_right_top .call_us a{
+.fidel.btn{
     display: inline-block;
     color: #180004;
     font-family: 'Exo 2', sans-serif;
     text-align: center;
     padding: 0 33px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
     line-height: 40px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #E8C47F;
 }
 .header_right_bottom{
     clear: both;
@@ -389,6 +389,7 @@ header{
     top: 0;
     left: 0;
     background: url(../../src/img_fid/order_table_border.svg);
+    z-index: -1;
 }
 .table_order.fidel .table_order_title{
     font-family: "Rubik Regular", sans-serif;
@@ -440,9 +441,52 @@ header{
 /**/
 
 .menu_section{
-    padding-top: 22px;
     background: #111111;
+    padding-bottom: 22px;
 }
+
+.specmenu{
+    padding-top: 35px;
+}
+.specmenu_title{
+    font-family: 'Corinthia', sans-serif;
+    font-size: 144px;
+    color: #FFFFFF;
+    line-height: 1;
+    padding-bottom: 15px;
+}
+.specmenu_items{
+
+}
+.specmenu_items ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.specmenu_items ul li{
+    padding-bottom: 55px;
+}
+.specmenu_items ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+.specmenu_items ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    background: url(../../src/img_fid/specmenu_arr.svg) no-repeat;
+    padding-right: 40px;
+    vertical-align: middle;
+}
+.specmenu_items ul li a span{
+    vertical-align: middle;
+}
+
 /**/
 @media (min-width: 1200px){
     .container{

@@ -145,6 +145,7 @@ function watch(){
 	gulp.watch('./src/css/**/*.css', stylesOrigFidel);
 	// следить за js
 	gulp.watch('./src/js/**/*.js', scripts);
+	gulp.watch('./src/js/**/*.js', scriptFidel);
 	// следить за изменениями html
 	gulp.watch("./*.html").on('change', browserSync.reload);
 }

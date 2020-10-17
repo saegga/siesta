@@ -17,172 +17,10 @@
     font-style: normal;
 }
 
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Thin'), local('Exo2-Thin'),*/
-/*    url('../../src/fonts/exo/exo2thin.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2thin.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2thin.ttf') format('truetype');*/
-/*    font-weight: 100;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Thin Italic'), local('Exo2-ThinItalic'),*/
-/*    url('../../src/fonts/exo/exo2thinitalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2thinitalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2thinitalic.ttf') format('truetype');*/
-/*    font-weight: 100;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Extra Light'), local('Exo2-ExtraLight'),*/
-/*    url('../../src/fonts/exo/exo2extralight.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2extralight.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2extralight.ttf') format('truetype');*/
-/*    font-weight: 200;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Extra Light Italic'), local('Exo2-ExtraLightItalic'),*/
-/*    url('../../src/fonts/exo/exo2extralightitalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2extralightitalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2extralightitalic.ttf') format('truetype');*/
-/*    font-weight: 200;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Light'), local('Exo2-Light'),*/
-/*    url('../../src/fonts/exo/exo2light.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2light.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2light.ttf') format('truetype');*/
-/*    font-weight: 300;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Light Italic'), local('Exo2-LightItalic'),*/
-/*    url('../../src/fonts/exo/exo2lightitalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2lightitalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2lightitalic.ttf') format('truetype');*/
-/*    font-weight: 300;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2'), local('Exo2-Regular'),*/
-/*    url('../../src/fonts/exo/exo2.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2.ttf') format('truetype');*/
-/*    font-weight: 400;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Italic'), local('Exo2-Italic'),*/
-/*    url('../../src/fonts/exo/exo2italic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2italic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2italic.ttf') format('truetype');*/
-/*    font-weight: 400;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Medium'), local('Exo2-Medium'),*/
-/*    url('../../src/fonts/exo/exo2medium.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2medium.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2medium.ttf') format('truetype');*/
-/*    font-weight: 500;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Medium Italic'), local('Exo2-MediumItalic'),*/
-/*    url('../../src/fonts/exo/exo2mediumitalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2mediumitalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2mediumitalic.ttf') format('truetype');*/
-/*    font-weight: 500;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Semi Bold'), local('Exo2-SemiBold'),*/
-/*    url('../../src/fonts/exo/exo2semibold.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2semibold.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2semibold.ttf') format('truetype');*/
-/*    font-weight: 600;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Semi Bold Italic'), local('Exo2-SemiBoldItalic'),*/
-/*    url('../../src/fonts/exo/exo2semibolditalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2semibolditalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2semibolditalic.ttf') format('truetype');*/
-/*    font-weight: 600;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Bold'), local('Exo2-Bold'),*/
-/*    url('../../src/fonts/exo/exo2bold.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2bold.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2bold.ttf') format('truetype');*/
-/*    font-weight: 700;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Bold Italic'), local('Exo2-BoldItalic'),*/
-/*    url('../../src/fonts/exo/exo2bolditalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2bolditalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2bolditalic.ttf') format('truetype');*/
-/*    font-weight: 700;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Extra Bold'), local('Exo2-ExtraBold'),*/
-/*    url('../../src/fonts/exo/exo2extrabold.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2extrabold.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2extrabold.ttf') format('truetype');*/
-/*    font-weight: 800;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Extra Bold Italic'), local('Exo2-ExtraBoldItalic'),*/
-/*    url('../../src/fonts/exo/exo2extrabolditalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2extrabolditalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2extrabolditalic.ttf') format('truetype');*/
-/*    font-weight: 800;*/
-/*    font-style: italic;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Black'), local('Exo2-Black'),*/
-/*    url('../../src/fonts/exo/exo2black.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2black.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2black.ttf') format('truetype');*/
-/*    font-weight: 900;*/
-/*    font-style: normal;*/
-/*}*/
-/*@font-face {*/
-/*    font-family: 'Exo 2';*/
-/*    src: local('Exo 2 Black Italic'), local('Exo2-BlackItalic'),*/
-/*    url('../../src/fonts/exo/exo2blackitalic.woff2') format('woff2'),*/
-/*    url('../../src/fonts/exo/exo2blackitalic.woff') format('woff'),*/
-/*    url('../../src/fonts/exo/exo2blackitalic.ttf') format('truetype');*/
-/*    font-weight: 900;*/
-/*    font-style: italic;*/
-/*}*/
 body{
     background: #111111;
 }
-p{
+ul, p{
     margin: 0;
     padding: 0;
 }
@@ -742,9 +580,20 @@ header{
 }
 /**/
 .news_onmain{
-    /*background: #111111;*/
+    position: relative;
     margin-top: 180px;
-    margin-left: 35px;
+    padding-left: 35px;
+}
+.news_onmain:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 786px;
+    left: 0;
+    top: -100px;
+    background: url(../../src/img_fid/news_fon.svg) repeat;
+    z-index: -1;
 }
 .news_title{
     text-align: center;
@@ -770,6 +619,10 @@ header{
     position: relative;
     width: 400px;
     height: 300px;
+    margin-right: 30px;
+}
+.news_item:last-child{
+    margin-right: 0;
 }
 .news_item img{
     max-width: 100%;
@@ -784,12 +637,193 @@ header{
 .news_txt_top{
     font-weight: bold;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #fff;
     padding-bottom: 10px;
 }
 .news_txt_bottom{
-    color: #FFFFFF;
+    color: #fff;
+    font-weight: 400;
 }
+.news_slider{
+    margin-top: 30px;
+}
+.news_slider .slick-dots{
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+    text-align: center;
+
+}
+.news_slider .slick-dots li{
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+.news_slider .slick-dots li:last-child{
+    padding-right: 0;
+}
+.news_slider .slick-dots li > button{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #F2CD84;
+    background-color: transparent;
+    padding: 0;
+}
+.news_slider .slick-dots li.slick-active > button{
+    background: #F2CD84;
+}
+.news_slider .slick-dots li > button:active,
+.news_slider .slick-dots li > button:focus{
+    outline: none;
+}
+/**/
+
+.reviews{
+    position: relative;
+}
+.reviews_container{
+    position: relative;
+    width: 1170px;
+    margin: 30px auto 0 auto;
+}
+.reviews_title{
+    padding-left: 175px;
+    padding-top: 40px;
+    line-height: 1;
+}
+.reviews_title-top{
+    font-family: 'Corinthia', sans-serif;
+    font-size: 144px;
+    font-weight: 400;
+}
+.reviews_title-top span{
+    position: relative;
+    font-family: 'Exo', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    background-image: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+    color: transparent;
+    -webkit-background-clip: text;
+
+    right: 227px;
+    top: 50px;
+    letter-spacing: 1.3px;
+}
+.reviews_statistic{
+    position: absolute;
+    background-image: url(../../src/images/review_stat.svg);
+    width: 277px;
+    height: 255px;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    padding: 0 55px;
+}
+.reviews_statistic p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #180004;
+    font-family: Exo, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+}
+.reviews_statistic p span{
+    display: block;
+    font-family: Rubik Regular, sans-serif;
+    font-size: 96px;
+    background-image: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+    color: transparent;
+    -webkit-background-clip: text;
+    line-height: 1;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.reviews_slider{
+    position: relative;
+    padding-top: 40px;
+    max-width: 630px;
+    margin: 0 auto;
+}
+.reviews_slider-item{
+    /*padding-top: 50px;*/
+}
+.reviews_img{
+    width: 46px;
+    height: 50px;
+    margin: 0 auto 30px auto;
+}
+.reviews_text{
+    font-family: Exo, sans-serif;
+    font-size: 16px;
+    color: #180004;
+    font-weight: 400;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+}
+.reviews_slider button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #54B991;
+    /*border-image: linear-gradient(#54B991 , #54B3B9);*/
+    /*border-image-slice: 1;*/
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 500;}
+.reviews_slider button:active,
+.reviews_slider button:focus{
+    outline: none;
+}
+.reviews_slider button i{
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reviews_slider button.left-arrow{
+    left: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reviews_slider button.right-arrow{
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reviews_slider button.left-arrow i{
+    background: url(../../src/img_fid/review_left.svg);
+}
+.reviews_slider button.right-arrow i{
+    background: url(../../src/img_fid/review_right.svg);
+}
+
+.reviews_name{
+    font-family: 'Corinthia', sans-serif;
+    font-size: 36px;
+    color: #180004;
+    line-height: 1;
+    text-align: center;
+    padding-top: 65px;
+}
+.reviews_fon{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
 @media (min-width: 1200px){
     .container{
         max-width: 1200px;

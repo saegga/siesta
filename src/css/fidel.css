@@ -870,12 +870,15 @@ header{
 .addres_info{
 
 }
-.addres_info{
+.addres_info,
+.tel_value a{
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     color: #FFFFFF;
 }
-
+.tel_value a:hover{
+    text-decoration: none;
+}
 .addres_info i{
     display: inline-block;
     width: 17px;
@@ -899,6 +902,163 @@ header{
 .map_block{
 
 }
+/**/
+.more_us{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+.more_us-items{
+    display: flex;
+    flex-basis: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.more_us_img{
+    display: inline-block;
+}
+.more_us .more_us_title{
+    font-family: 'Corinthia', sans-serif;
+    font-size: 48px;
+    color: #fff;
+}
+.more_us-item span{
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Exo 2', sans-serif;
+    color: #F2CD84;
+    max-width: 90px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+.meeting_fon_right{
+    position: absolute;
+    right: 0;
+    top: -90px;
+    z-index: -1;
+}
+.meeting_fon_left{
+    position: absolute;
+    left: 0;
+    top: -460px;
+    z-index: -1;
+}
+.more_us_btn{}
+
+.more_us_order{
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    background: linear-gradient(33.2deg,
+    #E8C47F 1.93%, #D09B5D 32.45%, #E9C082 37.31%, #F5DBA9 55.06%,
+    #E7C37F 69.08%, #D5A46A 94.37%, #A87E2D 99.31%);
+    border-radius: 30px;
+    color: #180004;
+}
+.more_us_order:hover{
+    color: #180004;
+    text-decoration: none;
+}
+/**/
+.instagram_section{
+    margin-top: 75px;
+}
+.instagram_title{
+    font-family: 'Rubik Regular', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F2CD84;
+    padding-bottom: 35px;
+}
+.instagram_block{
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #F2CD84;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 12px;
+}
+.instagram_item{
+    width: 190px;
+    height: 190px;
+}
+.instagram_item img{
+    max-width: 100%;
+}
+/**/
+
+footer{}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.company_name{
+    font-size: 12px;
+    color: #CABAA3;
+    font-family: 'PT Sans Caption', sans-serif;
+    max-width: 90px;
+}
+.socials a{
+    position: relative;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #F2CD84;
+    border-radius: 50%;
+    margin-right: 42px;
+}
+.socials a:last-child{
+    margin-right: 0;
+}
+.socials a > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dev > p{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #D0D0D0;
+}
+.dev > a{
+    float: right;
+}
+.mobile_footer_sec{
+    align-items: center;
+    background: #F3F3F3;
+    height: 60px;
+}
+.foot_icons{
+    padding-left: 15px;
+}
+.foot_icons a{
+    padding-right: 25px;
+}
+.foot_icons a:last-child{
+    padding-right: 0;
+}
+/**/
+/*media fidel*/
+
 @media (min-width: 1200px){
     .container{
         max-width: 1200px;

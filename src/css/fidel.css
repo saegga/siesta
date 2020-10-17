@@ -823,7 +823,44 @@ header{
     right: 0;
     top: -80px;
 }
+/**/
 
+.map_section{
+    height: 400px;
+    overflow: hidden;
+}
+.map_wrap{
+    display: flex;
+}
+.adress_block{
+    position: relative;
+    width: 47%;
+    background: #494949;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 100;
+}
+.adress_block:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: -85px;
+    /*width: 200px;*/
+    height: 500px;
+    border-right: 200px solid;
+    border-color: #494949;
+    /*background-color: #0ff;*/
+    border-top-right-radius: 120%;
+    top: -44px;
+    border-bottom-right-radius: 120%;
+    z-index: -1;
+}
+
+.map_block{
+
+}
 @media (min-width: 1200px){
     .container{
         max-width: 1200px;

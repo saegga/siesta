@@ -179,7 +179,9 @@
 /*    font-weight: 900;*/
 /*    font-style: italic;*/
 /*}*/
-
+body{
+    background: #111111;
+}
 p{
     margin: 0;
     padding: 0;
@@ -208,6 +210,7 @@ header{
     left: 0;
     top: 0px;
     z-index: -1;
+    background-size: cover;
 }
 .header_logo{
     padding-top: 35px;
@@ -379,7 +382,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../../src/img_fid/order_table_border.svg);
+    background: url(../../src/img_fid/order_table_border.svg) no-repeat;
     z-index: 1;
 }
 .table_order.fidel .table_order_title{
@@ -429,10 +432,15 @@ header{
 /**/
 
 .menu_section{
+    position: relative;
     background: #111111;
     padding-bottom: 22px;
 }
-
+.menu_section_fon{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 .specmenu{
     padding-top: 35px;
 }
@@ -586,8 +594,13 @@ header{
 /**/
 
 .about_facts_section{
+    position: relative;
     padding-top: 80px;
     background-color: #111111;
+}
+.about_facts_section_fon{
+    position: absolute;
+    right: 0;
 }
 .about_facts:after,
 .about_facts_container:after{
@@ -629,11 +642,12 @@ header{
     z-index: 100;
     overflow: hidden;
 }
-.about_facts-img{
+.about_facts-photos{
     position: absolute;
     bottom: -50px;
     left: -50px;
     z-index: 99;
+    width: 690px;
 }
 .about_facts-slider-wrap{
     position: relative;
@@ -727,7 +741,55 @@ header{
     transform: translate(-50%, -50%);
 }
 /**/
-
+.news_onmain{
+    /*background: #111111;*/
+    margin-top: 180px;
+    margin-left: 35px;
+}
+.news_title{
+    text-align: center;
+}
+.news_title span{
+    display: inline-block;
+    width: 100%;
+}
+.news_title span:first-child{
+    font-family: 'Corinthia', sans-serif;
+    font-size: 64px;
+    color: #FFFFFF;
+    transform: rotate(-7.43deg);
+}
+.news_title span:last-child{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #F2CD84;
+    text-transform: uppercase;
+}
+.news_item{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.news_item img{
+    max-width: 100%;
+}
+.news_txt{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    padding: 0 20px 20px 25px;
+}
+.news_txt_top{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+.news_txt_bottom{
+    color: #FFFFFF;
+}
 @media (min-width: 1200px){
     .container{
         max-width: 1200px;

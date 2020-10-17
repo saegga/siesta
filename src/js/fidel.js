@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    $('.down_arr').on('click', function () {
+        $('body, html').animate({
+            scrollTop: $('.menu_section').offset().top
+        }, 600)
+    });
+
     $('.specmenu_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 3,

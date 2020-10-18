@@ -1,11 +1,26 @@
 $(document).ready(function () {
 
     $('.mmenu_btn').on('click', function () {
-       if(!$(this).hasClass("open")){
+
+        if(!$(this).hasClass("open")){
            $(this).addClass("open");
        }else{
            $(this).removeClass("open");
        }
+
+        if(!$(".m_whatsup").hasClass("open")){
+            $(".m_whatsup").addClass("open");
+        }else{
+            $(".m_whatsup").removeClass("open");
+        }
+
+        if(!$(".mmenu_layer").hasClass("open")){
+            $(".mmenu_layer").addClass("open");
+            $(".mmenu_layer").css({'height' : $('.mmenu_call_us').offset().top + $('.mmenu_call_us').height() + 45 + 'px'});
+        }else{
+            $(".mmenu_layer").removeClass("open");
+            $(".mmenu_layer").css({'height' : '0px'});
+        }
     });
 
     $('.down_arr').on('click', function () {

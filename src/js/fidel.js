@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    $('.mmenu_btn').on('click', function () {
+       if(!$(this).hasClass("open")){
+           $(this).addClass("open");
+       }else{
+           $(this).removeClass("open");
+       }
+    });
+
     $('.down_arr').on('click', function () {
         $('body, html').animate({
             scrollTop: $('.menu_section').offset().top

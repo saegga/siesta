@@ -23,6 +23,15 @@ $(document).ready(function () {
         }
     });
 
+    $('.specmenu_current ').on('click', function () {
+        if(!$(this).parent(".specmenu_items").hasClass("open")){
+            $(this).parent(".specmenu_items").addClass("open");
+        }else{
+            $(this).parent(".specmenu_items").removeClass("open");
+        }
+
+    });
+
     $('.down_arr').on('click', function () {
         $('body, html').animate({
             scrollTop: $('.menu_section').offset().top

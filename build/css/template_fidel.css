@@ -1388,9 +1388,18 @@ footer{
         box-sizing: border-box;
         -webkit-border-radius: 30px;
         border-radius: 30px;
-
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
     }
+    .specmenu_items ul{
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
     .specmenu_items .specmenu_current{
+        position: relative;
         height: 60px;
         line-height: 60px;
         color: #fff;
@@ -1400,15 +1409,67 @@ footer{
         text-transform: uppercase;
         padding-left: 30px;
     }
+
     .specmenu_items .specmenu_current:after{
+        position: absolute;
         content: '';
         display: inline-block;
         width: 13px;
         height: 8px;
         background: url(../../src/img_fid/mob_arr_menu.svg);
+        top: 50%;
+        right: 30px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .specmenu_items.open{
+        -webkit-border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0;
+        height: auto;
+        border: none;
+    }
+
+    .specmenu_items.open ul{
+        /*display: block;*/
+        height: 100%;
+        background-color: #fff;
 
     }
+
+    .specmenu_items.open .specmenu_current{
+        background: #fff;
+        color: #494949;
+
+    }
+
+    .specmenu_items.open .specmenu_current:after{
+        background: url(../../src/img_fid/mob_arr_menu_black.svg);
+    }
+
     .specmenu_items ul{
+        /*display: none;*/
+        height: 0;
+        padding: 0 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .specmenu_items ul li{
+        padding-bottom: 20px;
+    }
+
+    .specmenu_items ul li a:before{
         display: none;
     }
+
+    .specmenu_items.open ul li a{
+        color: #494949;
+    }
+
 }

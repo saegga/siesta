@@ -34,11 +34,34 @@ $(document).ready(function () {
 
     $('.down_arr').on('click', function () {
         $('body, html').animate({
-            scrollTop: $('.menu_section').offset().top
-        }, 600)
+            scrollTop: $('.menu_section').offset().top + 50
+        }, 300)
     });
 
-    $('.specmenu_slider').slick({
+    var specMenuSlider = $('.specmenu_slider');
+
+
+    if(specMenuSlider.length){
+        var currentSlideSpec;
+        var slidesCountSpec;
+
+        var sliderCountSpec = function(slick, currentIndex) {
+            currentSlideSpec = slick.slickCurrentSlide() + 1;
+            slidesCountSpec = slick.slideCount;
+
+            $('.count_specmenu_slider').text(currentSlideSpec + ' / ' + slidesCountSpec);
+        };
+
+        specMenuSlider.on('init', function (event, slick) {
+            $('.specmenu_slider-arrows .left-arrow').after("<div class='count_specmenu_slider'></div>");
+            sliderCountSpec(slick);
+        });
+        specMenuSlider.on('afterChange', function(event, slick, currentSlide) {
+            sliderCountSpec(slick, currentSlide);
+        });
+    }
+
+    specMenuSlider.slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
@@ -58,6 +81,7 @@ $(document).ready(function () {
             }
         ]
     });
+
 
     $('.about_facts-slider').slick({
         // variableWidth: true,
@@ -92,6 +116,15 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                     slidesToShow: 3,
                 }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    infinite: true,
+                    variableWidth: true,
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                }
             }
         ]
     });
@@ -106,10 +139,11 @@ $(document).ready(function () {
             currentSlideReview = slick.slickCurrentSlide() + 1;
             slidesCountReview = slick.slideCount;
 
-            // $(sliderCounter).text(currentSlide + '/' +slidesCount)
+            $('.count_review_slider').text(currentSlideReview + ' / ' + slidesCountReview);
         };
 
         reviewSlider.on('init', function (event, slick) {
+            $('.slider_reviews-arrow .left-arrow').after("<div class='count_review_slider'></div>");
             sliderCountReview(slick);
         });
 

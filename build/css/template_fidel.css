@@ -315,6 +315,31 @@ header:after{
     left: 0;
     top: 0;
 }
+
+.count_specmenu_slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Exo 2 ', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #F2CD84;
+}
+.count_review_slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Exo 2 ', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #494949;
+}
 .specmenu{
     padding-top: 35px;
 }
@@ -1399,7 +1424,7 @@ footer{
         max-width: 1200px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     header:after{
         background: url(../../src/img_fid/fidel_mobheader.png) 0 0/cover no-repeat;
         height: 500px;
@@ -1876,10 +1901,12 @@ footer{
         flex-wrap: wrap;
     }
     .slider_reviews-arrow{
-        position: static;
+        position: relative;
         -webkit-transform: unset;
         -ms-transform: unset;
         transform: unset;
+        top: unset;
+        left: unset;
     }
     .slider_reviews-arrow button.left-arrow{
         top: 0;
@@ -1965,21 +1992,27 @@ footer{
         padding: 0 15px;
     }
     .more_us-item{
+        width: 33.3%;
         text-align: center;
+        -webkit-align-self: start;
+        -ms-flex-item-align: start;
+        align-self: start;
     }
     .more_us-item span{
         display: block;
         margin-left: 0;
         text-align: center;
         padding-top: 10px;
+        max-width: unset;
+        font-size: 10px;
     }
     .more_us_img img{
-        width: 50px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
     .more_us_btn{
         width: 100%;
-        margin: 20px auto 0 auto;
+        margin: 20px 15px 0 15px;
     }
     .more_us_order{
         width: 100%;
@@ -2005,12 +2038,25 @@ footer{
         background-size: contain;
     }
     .mob_open_insta{
+        position: relative;
         width: 33%;
         background: #F2CD84;
         background: url(../../src/img_fid/insta_open_mob.svg);
         background-position: 50% 30%;
         background-repeat: no-repeat;
         background-color: #F2CD84;
+    }
+    .mob_open_insta:after{
+        content: 'Открыть';
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        text-transform: uppercase;
+        color: #000;
+        -webkit-transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+        transform: translate(-50%, -65%);
+        font-size: 10px;
     }
     .mob_open_insta a{
         display: block;

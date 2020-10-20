@@ -813,7 +813,7 @@ header:after{
     margin: 0 auto 30px auto;
 }
 .reviews_text{
-    font-family: Exo, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     color: #fff;
     font-weight: 400;
@@ -914,6 +914,7 @@ header:after{
 /**/
 
 .map_section{
+    position: relative;
     height: 400px;
     overflow: hidden;
 }
@@ -974,14 +975,35 @@ header:after{
     text-decoration: none;
 }
 .addres_info i{
-    display: inline-block;
+    display: table-cell;
     width: 17px;
     height: 17px;
-    margin-right: 15px;
 }
+.addres_info{
+
+}
+.adress_value,
+.time_value,
+.tel_value{
+    width: 100%;
+    display: table;
+}
+
 .adress_value,
 .time_value{
     padding-bottom: 35px;
+}
+.adress_value span{
+    display: table-cell;
+    padding-left: 15px;
+}
+.time_value span{
+    display: table-cell;
+    padding-left: 15px;
+}
+.tel_value span{
+    display: table-cell;
+    padding-left: 15px;
 }
 .adress_value i{
     background: url(../../src/img_fid/home.svg) no-repeat center;
@@ -1101,6 +1123,14 @@ header:after{
     padding-bottom: 35px;
 }
 .instagram_block{
+    border: 3px solid #F2CD84;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+.instagram_wrap{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1108,17 +1138,20 @@ header:after{
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border: 3px solid #F2CD84;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    padding: 12px;
+    overflow: hidden;
 }
 .instagram_item{
+    position: relative;
     width: 190px;
     height: 190px;
 }
+.instagram_item a{
+    display: block;
+    height: 100%;
+}
+
 .instagram_item img{
     max-width: 100%;
 }
@@ -1758,6 +1791,7 @@ footer{
         position: relative;
         background: -o-linear-gradient(309.09deg, #54B991 20.96%, #54B3B9 77.59%);
         background: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+        padding-bottom: 177px;
     }
     .reviews_title{
         padding-left: 0;
@@ -1806,14 +1840,184 @@ footer{
     .reviews_name{
         padding-top: 30px;
         padding-bottom: 50px;
+        font-weight: 400;
     }
     .reviews_text{
-        color: #fff;
-        font-weight: 600;
+        color: #180004;
+        font-weight: 500;
         text-align: center;
         font-size: 13px;
         line-height: 17px;
         margin: 0 30px;
         max-width: unset;
+    }
+    .reviews_slider-container{
+        background: #F2CD84;
+    }
+    .reviews_title{
+        margin-bottom: 30px;
+    }
+
+    .reviews_title-top{
+        color: #180004;
+    }
+    .reviews_slider-wrap{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .slider_reviews-arrow{
+        position: static;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+    }
+    .slider_reviews-arrow button.left-arrow{
+        top: 0;
+        left: -30px;
+        border: 1px solid #494949;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+    }
+    .slider_reviews-arrow button.right-arrow{
+        top: 0;
+        right: -30px;
+        border: 1px solid #494949;
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    .slider_reviews-arrow button.left-arrow i{
+        background: url(../../src/img_fid/slider_arr_black.svg);
+    }
+    .slider_reviews-arrow button.right-arrow i{
+        background: url(../../src/img_fid/slider_arr_black.svg);
+    }
+    .reviews_slider{
+        padding-top: 30px;
+    }
+
+    .map_section{
+        top: -145px;
+        margin-bottom: -145px;
+        height: unset;
+    }
+    .map_wrap{
+        display: block;
+    }
+    .map_block{
+        height: 250px;
+    }
+
+    .map_block iframe{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .map_section .container{
+        padding: 0 10px;
+    }
+    .adress_block{
+        width: 100%;
+        padding: 30px 30px 45px 30px;
+        -webkit-border-radius: 20px 20px 0 0;
+        border-radius: 20px 20px 0 0;
+    }
+    .adress_block:before{
+        display: none;
+    }
+    .adress_block .wait{
+        font-size: 48px;
+    }
+    .adress_block .adress_title{
+        font-size: 20px;
+    }
+    .adress_value, .time_value{
+        padding-bottom: 24px;
+    }
+    .adress_value i{
+        background-position: top;
+    }
+
+    .more_us{
+        display: block;
+        padding: 15px 0 0px;
+    }
+    .more_us > p{
+        text-align: center;
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
+    .more_us-items{
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+    .more_us-item{
+        text-align: center;
+    }
+    .more_us-item span{
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .more_us_img img{
+        width: 50px;
+        height: 40px;
+    }
+    .more_us_btn{
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+    .more_us_order{
+        width: 100%;
+    }
+    .instagram_section{
+        margin-top: 40px;
+    }
+    .instagram_section .container{
+        padding: 0 10px;
+    }
+    .instagram_block{
+        border: 2px solid #f2cd84;
+        padding: 13px;
+    }
+    .instagram_title{
+        line-height: 1;
+        padding-bottom: 20px;
+    }
+    .instagram_item{
+        width: 90px;
+        height: 90px;
+    }
+    .mob_open_insta{
+        width: 90px;
+        height: 90px;
+        background: #F2CD84;
+        background: url(../../src/img_fid/insta_open_mob.svg);
+        background-position: 50% 30%;
+        background-repeat: no-repeat;
+        background-color: #F2CD84;
+    }
+    .mob_open_insta a{
+        display: block;
+        margin-top: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+        font-family: 'Rubik Regular', sans-serif;
+        font-size: 10px;
     }
 }

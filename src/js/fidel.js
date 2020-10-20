@@ -83,6 +83,17 @@ $(document).ready(function () {
         customPaging : function(slider, i) {
             return '<button class="tab"></button>';
         },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    infinite: true,
+                    variableWidth: true,
+                    slidesToScroll: 1,
+                    slidesToShow: 3,
+                }
+            }
+        ]
     });
 
     $('.reviews_slider').slick({

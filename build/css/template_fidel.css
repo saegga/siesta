@@ -1999,12 +1999,13 @@ footer{
         padding-bottom: 20px;
     }
     .instagram_item{
-        width: 90px;
-        height: 90px;
+        width: 33.33%;
+    }
+    .instagram_item a{
+        background-size: contain;
     }
     .mob_open_insta{
-        width: 90px;
-        height: 90px;
+        width: 33%;
         background: #F2CD84;
         background: url(../../src/img_fid/insta_open_mob.svg);
         background-position: 50% 30%;
@@ -2019,5 +2020,26 @@ footer{
         color: #000;
         font-family: 'Rubik Regular', sans-serif;
         font-size: 10px;
+    }
+    .footer_container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 25px 15px;
+    }
+    .company_name{
+        max-width: unset;
+    }
+    .company_name{
+        padding-top: 25px;
+    }
+    .dev{
+        padding-top: 12px;
     }
 }

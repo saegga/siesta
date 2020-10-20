@@ -124,43 +124,12 @@ $(document).ready(function () {
         nextArrow: '<button id="next" type="button" class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
     });
 
+    $(window).on('resize load', function () {
 
-    var specMenuSliderUpdate = false;
-    var specMenuSliderUpdate2 = false;
+        var w = $('.instagram_item').width();
+        $('.instagram_item').css({'height' : w});
 
-    // checkSlider();
-    // $(window).on('resize', function () {
-    //     checkSlider();
-    // });
-
-    // function checkSlider() {
-    //     if($(window).width() < 768){
-    //         if(specMenuSliderUpdate === false){
-    //             $('.specmenu_slider').slick('slickSetOption', {
-    //                 slidesToShow: 3,
-    //                 slidesToScroll: 1,
-    //                 infinite: true,
-    //                 variableWidth: true,
-    //                 appendArrows: $('.specmenu_slider-arrows'),
-    //                 prevArrow: '<button id="prev" type="button" class="left-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-    //                 nextArrow: '<button id="next" type="button" class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
-    //             });
-    //             specMenuSliderUpdate = true;
-    //         }else{
-    //             if(specMenuSliderUpdate2 === false){
-    //                 $('.specmenu_slider').slick('slickSetOption',{
-    //                     slidesToShow: 3,
-    //                     slidesToScroll: 3,
-    //                     infinite: true,
-    //                     variableWidth: true,
-    //                     appendArrows: $('.specmenu_slider-arrows'),
-    //                     prevArrow: '<button id="prev" type="button" class="left-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-    //                     nextArrow: '<button id="next" type="button" class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
-    //                 });
-    //                 specMenuSliderUpdate2 = true;
-    //             }
-    //
-    //         }
-    //     }
-    // }
+        var w1 = $('.mob_open_insta').width();
+        $('.mob_open_insta').css({'height' : w1});
+    });
 });

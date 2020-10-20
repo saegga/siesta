@@ -96,10 +96,34 @@ $(document).ready(function () {
         ]
     });
 
-    $('.reviews_slider').slick({
+    var reviewSlider =  $('.reviews_slider');
+
+    if(reviewSlider.length){
+        var currentSlideReview;
+        var slidesCountReview;
+
+        var sliderCountReview = function(slick, currentIndex) {
+            currentSlideReview = slick.slickCurrentSlide() + 1;
+            slidesCountReview = slick.slideCount;
+
+            // $(sliderCounter).text(currentSlide + '/' +slidesCount)
+        };
+
+        reviewSlider.on('init', function (event, slick) {
+            sliderCountReview(slick);
+        });
+
+        reviewSlider.on('afterChange', function(event, slick, currentSlide) {
+            sliderCountReview(slick, currentSlide);
+        });
+    }
+
+    reviewSlider.slick({
+        appendArrows: $('.slider_reviews-arrow'),
         prevArrow: '<button id="prev" type="button" class="left-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-        nextArrow: '<button id="next" type="button" class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+        nextArrow: '<button id="next" type="button" class="right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
     });
+
 
     var specMenuSliderUpdate = false;
     var specMenuSliderUpdate2 = false;

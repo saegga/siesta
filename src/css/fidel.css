@@ -1309,11 +1309,12 @@ footer{
         height: 500px;
     }
     .welcom_section{
-        padding-top: 30px;
+        padding-top: 50px;
         height: auto;
     }
     .welcom_first{
         font-size: 30px;
+        line-height: 35px;
     }
     .welcom_second{
         max-width: 75%;
@@ -1325,12 +1326,13 @@ footer{
         position: relative;
         height: 18px;
         overflow: hidden;
-        top: 35px;
+        top: 55px;
     }
     .specmenu_title{
         font-size: 72px;
         text-align: center;
         padding-top: 35px;
+        padding-bottom: 10px;
     }
     .specmenu_items{
         height: 60px;
@@ -1413,17 +1415,17 @@ footer{
     }
     .specmenu_item{
         max-width: 100%;
-        margin-right: 20px;
+        margin-right: 23px;
     }
     .specmenu .col-lg-3{
         padding: 0 10px;
     }
     .specmenu_right{
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .specmenu_slider_title{
         font-size: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         text-align: center;
     }
     .specmenu_slider-arrows{
@@ -1452,6 +1454,10 @@ footer{
         word-break: break-all;
         text-align: left;
     }
+    .specmenu_eyes{
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
     .specmenu_eyes img{
         float: right;
     }
@@ -1479,26 +1485,29 @@ footer{
 
     .about_facts-title{
         width: 100%;
-        padding-left: 20px;
+        padding-left: 10px;
         float: unset;
     }
     .about_facts-title .num_facts{
-        width: auto;
-        font-size: 300px;
+        width: 33%;
+        font-size: 290px;
+        line-height: 120px;
+        overflow: visible;
     }
     .about_facts-title span:last-child{
         color: #180004;
-        padding-top: 75px;
+        padding-top: 40px;
+        padding-left: 10px;
     }
     .about_facts-title span{
         display: inline-block;
         max-width: 300px;
         line-height: 120%;
         vertical-align: top;
-        padding-top: 30px;
+        padding-top: 0px;
         padding-left: 0px;
         float: unset;
-        width: 60%;
+        width: 67%;
         position: relative;
         left: 0px;
         color: #fff;
@@ -1526,7 +1535,7 @@ footer{
         width: 100%;
         border: unset;
         border-image: unset;
-        padding: 25px 10px 30px 10px;
+        padding: 35px 10px 30px 10px;
         min-height: unset;
     }
     .about_facts-slider-title{
@@ -1576,10 +1585,16 @@ footer{
     }
     .about_facts-photos{
         width: 100%;
-        position: static;
+        position: relative;
+        left: 0;
+        bottom: 20px;
+        margin-bottom: -20px;
     }
     .about_facts-slider-wrap:after{
         display: none;
+    }
+    .about_facts_section{
+        margin-top: 30px;
     }
     .about_facts_section:after{
         content: '';
@@ -1614,11 +1629,23 @@ footer{
         max-width: 100%;
         height: unset;
     }
+    .news_title span:last-child{
+        line-height: 1;
+        font-size: 31px;
+        letter-spacing: 1.1px;
+    }
     .news_item.slick-slide{
         width: 265px;
     }
+    .news_slider .slick-dots li{
+        width: 10px;
+        height: 10px;
+    }
 
     /*review*/
+    .reviews{
+        margin-top: 30px;
+    }
     .reviews_container{
         margin-top: 0;
     }
@@ -1722,7 +1749,7 @@ footer{
         width: 100%;
     }
     .reviews_name{
-        padding-top: 30px;
+        padding-top: 50px;
         padding-bottom: 50px;
         font-weight: 400;
     }
@@ -1779,8 +1806,8 @@ footer{
     }
 
     .map_section{
-        top: -145px;
-        margin-bottom: -145px;
+        top: -125px;
+        margin-bottom: -125px;
         height: unset;
     }
     .map_wrap{
@@ -1788,13 +1815,17 @@ footer{
     }
     .map_block{
         height: 250px;
+        border-radius: 0px 0px 20px 20px;
+        overflow: hidden;
     }
 
     .map_block iframe{
         width: 100% !important;
         height: 100% !important;
     }
-
+    .more_us .more_us_title{
+        font-size: 36px;
+    }
     .map_section .container{
         padding: 0 10px;
     }
@@ -1811,6 +1842,11 @@ footer{
     }
     .adress_block .adress_title{
         font-size: 20px;
+        padding-left: 85px;
+        line-height: 130%;
+    }
+    .addres_info{
+        padding-top: 20px;
     }
     .adress_value, .time_value{
         padding-bottom: 24px;
@@ -1818,15 +1854,18 @@ footer{
     .adress_value i{
         background-position: top;
     }
+    .addres_info, .tel_value a{
+        font-size: 13px;
+    }
 
     .more_us{
         display: block;
-        padding: 15px 0 0px;
+        padding: 25px 0 0px;
     }
     .more_us > p{
         text-align: center;
         font-size: 36px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     .more_us-items{
         flex-wrap: wrap;
@@ -1868,7 +1907,8 @@ footer{
     }
     .instagram_title{
         line-height: 1;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
+        font-size: 20px;
     }
     .instagram_item{
         width: 33.33%;
@@ -1911,10 +1951,11 @@ footer{
     }
     .company_name{
         max-width: unset;
-    }
-    .company_name{
         padding-top: 25px;
+        font-size: 10px;
+        color: #fff;
     }
+
     .dev{
         padding-top: 12px;
     }

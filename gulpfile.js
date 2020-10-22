@@ -19,6 +19,9 @@ const cssFiles = [
 const fidelCss = './src/css/fidel.css';
 const fidelJs = './src/js/fidel.js';
 
+const siestaCss = './src/css/siesta.css';
+const siestaJs = './src/js/siesta.js';
+
 const jsFiles = [
 	'./src/js/lib.js',
 	'./src/js/main.js'
@@ -84,6 +87,38 @@ function stylesOrigFidel(){
 		.pipe(browserSync.stream());
 }
 
+function stylesSiesta(){
+	return gulp.src(siestaCss)
+	// объединить файлы
+		.pipe(concat('fidel.css'))
+		.pipe(gulp.dest('./build/css'))
+
+		// Добавить префиксы
+		.pipe(autoprefixer({
+			browsers: ['last 40 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('./build/css'))
+
+
+		// минификация
+		.pipe(cleanCSS({level: 2}))
+		.pipe(gulp.dest('./build/css/'))
+		.pipe(browserSync.stream());
+}
+function stylesOrigSiesta(){
+	return gulp.src(siestaCss)
+		.pipe(concat('template_siesta.css'))
+		.pipe(gulp.dest('./build/css/'), {nocomment: true})
+
+		.pipe(autoprefixer({
+			browsers: ['last 40 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('./build/css/'))
+		.pipe(browserSync.stream());
+}
+
 function stylesOrig(){
 	return gulp.src(cssFiles)
 		.pipe(concat('template.css'))
@@ -109,6 +144,14 @@ function scripts(){
 function scriptFidel(){
 	return gulp.src(fidelJs)
 		.pipe(concat('fidel.js'))
+		.pipe(uglify())
+
+		.pipe(gulp.dest('./build/js'))
+		.pipe(browserSync.stream());
+}
+function scriptSiesta(){
+	return gulp.src(siestaJs)
+		.pipe(concat('siesta.js'))
 		.pipe(uglify())
 
 		.pipe(gulp.dest('./build/js'))
@@ -142,10 +185,13 @@ function watch(){
 	gulp.watch('./src/css/**/*.css', styles);
 	gulp.watch('./src/css/**/*.css', stylesOrig);
 	gulp.watch('./src/css/**/*.css', stylesFidel);
+	gulp.watch('./src/css/**/*.css', stylesSiesta);
 	gulp.watch('./src/css/**/*.css', stylesOrigFidel);
+	gulp.watch('./src/css/**/*.css', stylesOrigSiesta);
 	// следить за js
 	gulp.watch('./src/js/**/*.js', scripts);
 	gulp.watch('./src/js/**/*.js', scriptFidel);
+	gulp.watch('./src/js/**/*.js', scriptSiesta);
 	// следить за изменениями html
 	gulp.watch("./*.html").on('change', browserSync.reload);
 }
@@ -154,9 +200,11 @@ gulp.task('sass', sassPipe);
 gulp.task('styles', styles);
 gulp.task('stylesOrig', stylesOrig);
 gulp.task('stylesFidel', stylesFidel);
-gulp.task('stylesOrigFidel', stylesOrigFidel);
+gulp.task('stylesSiesta', stylesSiesta);
+gulp.task('stylesOrigSiesta', stylesOrigSiesta);
 gulp.task('scripts', scripts);
 gulp.task('scriptFidel', scriptFidel);
+gulp.task('scriptSiesta', scriptSiesta);
 gulp.task('del', clean);
 gulp.task('minImage', minImage);
 gulp.task('modern', modern);
@@ -164,7 +212,7 @@ gulp.task('modern', modern);
 gulp.task('watch', watch);
 
 // запуск тасков в опр порядке, и параллельно - parallel
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesFidel,  stylesOrig, stylesOrigFidel, scriptFidel, scripts, modern)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, stylesFidel,stylesSiesta ,  stylesOrig, stylesOrigSiesta,  stylesOrigFidel, scriptFidel, scriptSiesta,  scripts, modern)));
 // таск запускает по очереди сборку и обновление
 gulp.task('dev', gulp.series('build', 'watch'));
 

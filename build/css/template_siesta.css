@@ -191,7 +191,8 @@ header:after{
     background: url(../../src/img_siesta/head.svg);
     -webkit-transform: translateX(-52%);
     -ms-transform: translateX(-52%);
-    transform: translateX(-52%);
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
 }
 .welcom_text{
     max-width: 500px;
@@ -202,7 +203,7 @@ header:after{
     color: #140002;
     font-size: 28px;
     font-weight: 500;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
     text-transform: uppercase;
     text-align: center;
     line-height: 40px;
@@ -1370,8 +1371,8 @@ footer{
     padding-right: 25px;
 }
 .m_logo{
-    padding-top: 25px;
-    max-width: 108px;
+    padding-top: 5px;
+    max-width: 72px;
 }
 .m_logo img{
     max-width: 100%;
@@ -1386,7 +1387,7 @@ footer{
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url(../../src/img_fid/wa.svg);
+    background: url(../../src/img_siesta/wa_mob.svg);
     background-position: center;
     -webkit-transition: background 0.5s ease;
     -o-transition: background 0.5s ease;
@@ -1405,7 +1406,7 @@ footer{
 .mmenu_btn .line{
     width: 20px;
     height: 2px;
-    background: #F2CD84;
+    background: #140002;
     margin-bottom: 5px;
     -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1435,7 +1436,7 @@ footer{
     top: 0;
     width: 100%;
     height: 0%;
-    background: #F2CD84;
+    background: #F9B605;
     z-index: 1;
     -webkit-transition: height .5s ease;
     -o-transition: height .5s ease;
@@ -1504,29 +1505,51 @@ footer{
     }
 }
 @media (max-width: 769px) {
+    header{
+        height: 93px;
+    }
     header:after{
-        background: url(../../src/img_fid/fidel_mobheader.png) 0 0/cover no-repeat;
+        background: url(../../src/img_siesta/mob_head.png) 0 0/cover no-repeat;
         height: 500px;
+        top: 0;
     }
     .welcom_section{
-        padding-top: 50px;
-        height: auto;
+        margin-top: 105px;
+        padding-top: 0px;
+        height: 302px;
     }
     .welcom_first{
+        padding-top: 43px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .welcom_second{
+        max-width: 55%;
+        margin: 0 auto;
         font-size: 30px;
         line-height: 35px;
+        padding-top: 0;
     }
-    .welcom_second{
-        max-width: 75%;
-        margin: 0 auto;
-        font-size: 36px;
-        line-height: 42px;
+    .welcom_text:before{
+        content: '';
+        top: 0;
+        left: 50%;
+        position: absolute;
+        width: 305px;
+        height: 226px;
+        background: url(../../src/img_siesta/head_mob.svg);
+        -webkit-transform: translateX(-52%);
+        -ms-transform: translateX(-52%);
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
     }
     .down_arr{
         position: relative;
         height: 18px;
         overflow: hidden;
         top: 55px;
+        background: none;
     }
     .specmenu_title{
         font-size: 72px;

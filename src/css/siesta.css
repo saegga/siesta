@@ -1430,10 +1430,13 @@ footer{
         top: 55px;
         background: none;
     }
+    .specmenu{
+        padding-top: 0;
+    }
     .specmenu_title{
         font-size: 72px;
         text-align: center;
-        padding-top: 35px;
+        padding-top: 0px;
         padding-bottom: 10px;
     }
     .specmenu_items{
@@ -1443,6 +1446,7 @@ footer{
         box-sizing: border-box;
         border-radius: 30px;
         transition: all .5s ease;
+        background: #fff;
     }
     .specmenu_items ul{
         transition: all .5s ease;
@@ -1452,7 +1456,7 @@ footer{
         position: relative;
         height: 60px;
         line-height: 60px;
-        color: #fff;
+        color: #494949;
         font-family: 'Exo 2', sans-serif;
         font-weight: bold;
         font-size: 13px;
@@ -1461,6 +1465,10 @@ footer{
     }
     .count_specmenu_slider{
         display: block;
+    }
+    .specmenu_prices .eye{
+        top: 100%;
+        transform: translateY(-120%);
     }
     .specmenu_items .specmenu_current:after{
         position: absolute;
@@ -1475,8 +1483,8 @@ footer{
     }
 
     .specmenu_items.open{
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         height: auto;
         border: none;
     }
@@ -1519,13 +1527,21 @@ footer{
     }
     .specmenu_item{
         max-width: 100%;
-        margin-right: 23px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .specmenu .col-lg-9{
+        /*padding: 0 25px;*/
     }
     .specmenu .col-lg-3{
         padding: 0 10px;
     }
     .specmenu_right{
         margin-top: 25px;
+
+    }
+    .specmenu_slider{
+        padding: 0 10px;
     }
     .specmenu_slider_title{
         font-size: 20px;

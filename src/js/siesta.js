@@ -101,7 +101,7 @@ $(document).ready(function () {
         // infinite: true,
         variableWidth: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         dots: true,
         arrows: false,
         customPaging : function(slider, i) {

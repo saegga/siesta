@@ -19,6 +19,7 @@
 
 body{
     background: #f3f3f3;
+    overflow-x: hidden;
 }
 ul, p{
     margin: 0;
@@ -41,7 +42,7 @@ header:after{
     width: 100%;
     height: 950px;
     background-size: cover;
-    background: url("../../src/img_siesta/header_fon.png") no-repeat;
+    background: url("../../src/img_siesta/header.png") no-repeat;
     left: 0;
     top: 155px;
     z-index: -1;
@@ -183,17 +184,14 @@ header:after{
 .welcom_text:before{
     content: '';
     top: 70px;
+    left: 50%;
     position: absolute;
-    width: 489px;
-    height: 455px;
-    /*background: linear-gradient(180deg, rgba(17, 17, 17, 0.8) 4.69%, rgba(17, 17, 17, 0.8) 55.73%, rgba(17, 17, 17, 0.8) 100%);*/
-    background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(17,17,17,0.8)),color-stop(64.73%, rgba(17,17,17,0.8)),to(rgba(17,17,17,0.8)));
-    background: -o-linear-gradient(top,rgba(17,17,17,0.8) 0,rgba(17,17,17,0.8) 64.73%,rgba(17,17,17,0.8) 100%);
-    background: linear-gradient(180deg,rgba(17,17,17,0.8) 0,rgba(17,17,17,0.8) 64.73%,rgba(17,17,17,0.8) 100%);
-    -webkit-box-shadow: 0px 18px 48px 77px rgba(17, 17, 17, 0.8);
-    box-shadow: 0px 18px 48px 77px rgba(17, 17, 17, 0.8);
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    width: 403px;
+    height: 300px;
+    background: url(../../src/img_siesta/head.svg);
+    -webkit-transform: translateX(-52%);
+    -ms-transform: translateX(-52%);
+    transform: translateX(-52%);
 }
 .welcom_text{
     max-width: 500px;
@@ -201,41 +199,53 @@ header:after{
 }
 .welcom_first{
     position: relative;
-    color: #E11E34;
-    font-size: 40px;
+    color: #140002;
+    font-size: 28px;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     z-index: 500;
-
 }
 .welcom_second{
     position: relative;
     font-family: 'Corinthia', sans-serif;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 7px 6px #000000;
-    -webkit-transform: rotate(-4.95deg);
-    -ms-transform: rotate(-4.95deg);
-    transform: rotate(-4.95deg);
+    color: #180004;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
     padding-top: 10px;
     z-index: 500;
+    max-width: 40%;
+    margin: 0 auto;
 }
 .down_arr{
     cursor: pointer;
     position: absolute;
     left: 50%;
+    background: url(../../src/img_siesta/down_arr_fon.svg);
     z-index: 500;
+    width: 85px;
+    height: 115px;
+    background-repeat: no-repeat;
+    bottom: 20px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
-/*.down_arr img{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: -80px;*/
-/*}*/
+
+.down_arr img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 /*form*/
 .container.order_form{
     position: relative;
@@ -692,6 +702,7 @@ header:after{
     position: relative;
     margin-top: 180px;
     padding-left: 35px;
+    padding-top: 40px;
 }
 .news_onmain:after{
     content: '';
@@ -714,11 +725,11 @@ header:after{
     background: url(../../src/img_siesta/news_title_fon.svg);
     background-repeat: no-repeat;
     display: block;
-    width: 425px;
+    width: 466px;
     height: 180px;
     z-index: 1;
     left: 50%;
-    top: 50%;
+    top: 60%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -728,14 +739,15 @@ header:after{
     display: inline-block;
     width: 100%;
     z-index: 500;
+    line-height: 1;
 }
 .news_title span:first-child{
     font-family: 'Corinthia', sans-serif;
     font-size: 64px;
     color: #140002;
-    -webkit-transform: rotate(-7.43deg);
-    -ms-transform: rotate(-7.43deg);
-    transform: rotate(-7.43deg);
+    -webkit-transform: rotate(-7.43deg) translateX(-30px);
+    -ms-transform: rotate(-7.43deg) translateX(-30px);
+    transform: rotate(-7.43deg) translateX(-30px);
 }
 .news_title span:last-child{
     font-family: 'Exo 2', sans-serif;
@@ -774,7 +786,7 @@ header:after{
     font-weight: 400;
 }
 .news_slider{
-    margin-top: 30px;
+    margin-top: 45px;
 }
 .news_slider .slick-dots{
     list-style: none;
@@ -798,12 +810,12 @@ header:after{
     height: 100%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 1px solid #F2CD84;
+    border: 1px solid #fff;
     background-color: transparent;
     padding: 0;
 }
 .news_slider .slick-dots li.slick-active > button{
-    background: #F2CD84;
+    background: #fff;
 }
 .news_slider .slick-dots li > button:active,
 .news_slider .slick-dots li > button:focus{
@@ -854,9 +866,10 @@ header:after{
 .reviews_statistic p{
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #140002;
     font-family: 'Exo 2', sans-serif;
     font-weight: normal;
@@ -990,14 +1003,17 @@ header:after{
 
 .map_section{
     position: relative;
-    height: 400px;
-    overflow: hidden;
+    background-color: #121212;
+    padding-top: 70px;
+    padding-bottom: 10px;
 }
 .map_wrap{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 400px;
+    overflow: hidden;
 }
 .adress_block{
     position: relative;
@@ -1055,13 +1071,14 @@ header:after{
     height: 17px;
 }
 .addres_info{
-
+    padding-top: 35px;
 }
 .adress_value,
 .time_value,
 .tel_value{
     width: 100%;
     display: table;
+    font-weight: 600;
 }
 
 .adress_value,
@@ -1071,6 +1088,7 @@ header:after{
 .adress_value span{
     display: table-cell;
     padding-left: 15px;
+
 }
 .time_value span{
     display: table-cell;
@@ -1081,13 +1099,13 @@ header:after{
     padding-left: 15px;
 }
 .adress_value i{
-    background: url(../../src/img_fid/home.svg) no-repeat center;
+    background: url(../../src/img_siesta/home.svg) no-repeat top;
 }
 .time_value i{
-    background: url(../../src/img_fid/time.svg) no-repeat center;
+    background: url(../../src/img_siesta/time.svg) no-repeat top;
 }
 .tel_value i{
-    background: url(../../src/img_fid/phone.svg) no-repeat center;
+    background: url(../../src/img_siesta/tel.svg) no-repeat top;
 }
 
 .map_block{
@@ -1140,7 +1158,7 @@ header:after{
     font-size: 13px;
     font-weight: 700;
     font-family: 'Exo 2', sans-serif;
-    color: #F2CD84;
+    color: #F9B605;
     max-width: 90px;
     vertical-align: middle;
     text-transform: uppercase;
@@ -1171,12 +1189,10 @@ header:after{
     font-weight: 700;
     font-size: 13px;
     text-align: center;
-    background: -o-linear-gradient(56.8deg,
-    #E8C47F 1.93%, #D09B5D 32.45%, #E9C082 37.31%, #F5DBA9 55.06%,
-    #E7C37F 69.08%, #D5A46A 94.37%, #A87E2D 99.31%);
-    background: linear-gradient(33.2deg,
-    #E8C47F 1.93%, #D09B5D 32.45%, #E9C082 37.31%, #F5DBA9 55.06%,
-    #E7C37F 69.08%, #D5A46A 94.37%, #A87E2D 99.31%);
+    background: #F9B605;
+    /*background: linear-gradient(33.2deg,*/
+    /*#E8C47F 1.93%, #D09B5D 32.45%, #E9C082 37.31%, #F5DBA9 55.06%,*/
+    /*#E7C37F 69.08%, #D5A46A 94.37%, #A87E2D 99.31%);*/
     -webkit-border-radius: 30px;
     border-radius: 30px;
     color: #180004;
@@ -1187,18 +1203,18 @@ header:after{
 }
 /**/
 .instagram_section{
-    margin-top: 75px;
+    margin-top: 15px;
 }
 .instagram_title{
     font-family: 'Rubik Regular', sans-serif;
     font-size: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: #F2CD84;
+    color: #F9B605;
     padding-bottom: 35px;
 }
 .instagram_block{
-    border: 3px solid #F2CD84;
+    border: 3px solid #F9B605;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 12px;
@@ -1235,6 +1251,18 @@ header:after{
 footer{
     position: relative;
 }
+.wrap_main_footer{
+    content: '';
+    background: url(../../src/img_siesta/footer_fon.png);
+    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 554px;
+}
+/*footer:after{*/
+
+/*}*/
 .footer_container{
     display: -webkit-box;
     display: -webkit-flex;
@@ -1253,7 +1281,7 @@ footer{
 }
 .company_name{
     font-size: 12px;
-    color: #CABAA3;
+    color: #fff;
     font-family: 'PT Sans Caption', sans-serif;
     max-width: 90px;
 }
@@ -1262,10 +1290,11 @@ footer{
     display: inline-block;
     width: 24px;
     height: 23px;
-    border: 1px solid #F2CD84;
+    border: 1px solid #F9B605;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     margin-right: 42px;
+    background: #F9B605;
 }
 .socials a:last-child{
     margin-right: 0;
@@ -2068,6 +2097,7 @@ footer{
         background-position: top;
     }
     .addres_info, .tel_value a{
+        display: block;
         font-size: 13px;
     }
 

@@ -80,7 +80,7 @@ header:after{
 .header_socials a{
     position: relative;
     display: inline-block;
-    width: 23px;
+    width: 24px;
     height: 23px;
     border: 1px solid #140002;
     -webkit-border-radius: 50%;
@@ -856,27 +856,24 @@ header:after{
     position: absolute;
     background-image: url(../../src/img_siesta/stat_fon.svg);
     background-size: contain;
-    width: 270px;
-    height: 270px;
+    width: 280px;
+    height: 280px;
     background-repeat: no-repeat;
     top: 0;
     right: 0;
     padding: 0 25px;
 }
 .reviews_statistic p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     color: #140002;
     font-family: 'Exo 2', sans-serif;
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.4px;
+    padding-top: 52px;
+    padding-left: 45px;
+    line-height: 14px;
 }
-.reviews_statistic p span{
+.reviews_statistic p span:first-child{
     display: block;
     font-family: Rubik Regular, sans-serif;
     font-size: 72px;
@@ -885,7 +882,9 @@ header:after{
     margin-bottom: 5px;
     letter-spacing: 1px;
 }
-
+.reviews_statistic p span:last-child{
+    line-height: 18px;
+}
 .reviews_slider{
     position: relative;
     padding-top: 20px;
@@ -1003,6 +1002,7 @@ header:after{
 
 .map_section{
     position: relative;
+    margin-top: 75px;
     background-color: #121212;
     padding-top: 70px;
     padding-bottom: 10px;
@@ -1203,7 +1203,7 @@ header:after{
 }
 /**/
 .instagram_section{
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .instagram_title{
     font-family: 'Rubik Regular', sans-serif;
@@ -1211,7 +1211,7 @@ header:after{
     text-align: center;
     text-transform: uppercase;
     color: #F9B605;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 .instagram_block{
     border: 3px solid #F9B605;
@@ -1276,7 +1276,7 @@ footer{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 30px;
 }
 .company_name{

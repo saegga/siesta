@@ -416,11 +416,21 @@ header:after{
 .specmenu_item_img{
     position: relative;
 }
+.specmenu_item_name{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #E8C47F;
+    text-align: left;
+    text-transform: uppercase;
+}
 .specmenu_eyes{
+    position: relative;
     line-height: 1;
     padding-top: 10px;
     padding-bottom: 9px;
     text-align: right;
+    min-height: 32px;
 }
 .specmenu_prices{
     position: relative;
@@ -429,7 +439,11 @@ header:after{
     /*margin-top: 35px;*/
 }
 .specmenu_eyes img{
-    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /*margin-left: auto;*/
 }
 .old_price{
     width: 50%;

@@ -335,6 +335,7 @@ header:after{
     color: #F2CD84;
 }
 .count_review_slider{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -700,7 +701,7 @@ header:after{
     height: 786px;
     left: 0;
     top: 0px;
-    background: url(../../src/img_siesta/news_fon.png) repeat;
+    background: url(../../src/img_siesta/news_fon.png) no-repeat;
     z-index: -1;
 }
 .news_title{
@@ -841,9 +842,10 @@ header:after{
 }
 .reviews_statistic{
     position: absolute;
-    background-image: url(../../src/img_fid/review_stat.svg);
-    width: 277px;
-    height: 245px;
+    background-image: url(../../src/img_siesta/stat_fon.svg);
+    background-size: contain;
+    width: 270px;
+    height: 270px;
     background-repeat: no-repeat;
     top: 0;
     right: 0;
@@ -855,17 +857,17 @@ header:after{
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #fff;
+    color: #140002;
     font-family: 'Exo 2', sans-serif;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.4px;
 }
 .reviews_statistic p span{
     display: block;
     font-family: Rubik Regular, sans-serif;
-    font-size: 96px;
-    color: #F2CD84;
+    font-size: 72px;
+    color: #140002;
     line-height: 1;
     margin-bottom: 5px;
     letter-spacing: 1px;
@@ -912,10 +914,10 @@ header:after{
     position: absolute;
     width: 50px;
     height: 50px;
-    border: 1px solid #F2CD84;
+    border: 0;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: #F9B605;
     z-index: 500;
 }
 .slider_reviews-arrow button:active,
@@ -936,23 +938,23 @@ header:after{
 
 .slider_reviews-arrow button.left-arrow{
     left: -80px;
+    -webkit-transform: translateY(-50%) ;
+    -ms-transform: translateY(-50%) ;
+    transform: translateY(-50%) ;
+}
+
+.slider_reviews-arrow button.right-arrow{
+    right: -80px;
     -webkit-transform: translateY(-50%) rotate(-180deg);
     -ms-transform: translateY(-50%) rotate(-180deg);
     transform: translateY(-50%) rotate(-180deg);
 }
 
-.slider_reviews-arrow button.right-arrow{
-    right: -80px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 .slider_reviews-arrow button.left-arrow i{
-    background: url(../../src/img_fid/slider_arr.svg);
+    background: url(../../src/img_siesta/black_arr.svg);
 }
 .slider_reviews-arrow button.right-arrow i{
-    background: url(../../src/img_fid/slider_arr.svg);
+    background: url(../../src/img_siesta/black_arr.svg);
 }
 
 .reviews_name{
@@ -1916,6 +1918,9 @@ footer{
     .reviews_slider{
         /*overflow: hidden;*/
     }
+    .count_review_slider{
+        display: block;
+    }
     .slider_reviews-arrow button.left-arrow{
         left: -15px;
         top: 20%;
@@ -1925,10 +1930,10 @@ footer{
         top: 20%;
     }
     .slider_reviews-arrow button.right-arrow i{
-        background: url(../../src/images/mob_right_arr.svg);
+        background: url(../../src/img_siesta/black_arr.svg);
     }
     .slider_reviews-arrow button.left-arrow i{
-        background: url(../../src/images/mob_left_arr.svg);
+        background: url(../../src/img_siesta/black_arr.svg);
     }
 
     .slider_reviews-arrow button.left-arrow,

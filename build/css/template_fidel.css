@@ -1435,12 +1435,172 @@ footer{
 }
 /*media fidel*/
 
+/* modal cat item */
+
+.modal_menu{
+    position: relative;
+    padding: 50px;
+    max-width: 850px;
+    border: 1px solid;
+    background: #180004;
+    margin: 0 auto;
+}
+.modal_menu_container{
+    /*position: relative;*/
+    display: table;
+    width: 100%;
+}
+.modal_menu_img,
+.modal_menu_info{
+    display: table-cell;
+    vertical-align: top;
+    max-width: 370px;
+}
+.modal_menu_img img{
+    max-width: 100%;
+}
+.modal_menu_info{
+    padding-left: 30px;
+}
+
+.modal_menu_title p{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #F2CD84;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8C47F;
+}
+.modal_menu_descr{
+    padding-top: 25px;
+    font-family: 'Exo 2', sans-serif;
+}
+.modal_menu_descr-text{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+}
+.modal_menu_prices{
+    position: relative;
+    padding-top: 5px;
+}
+.modal_menu_prices .old_price span:last-child{
+    color: #fff;
+    font-size: 18px;
+}
+.modal_menu_descr-title{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+.modal_menu_props{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+.modal_menu_props .prop_item{
+    -webkit-flex-basis: 33%;
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%;
+    color: #F2CD84;
+    font-weight: 700;
+    font-size: 13px;
+}
+.modal_close{
+    position: absolute;
+    display: inline-block;
+    background: url(../../src/img_fid/close_desk.svg);
+    width: 16px;
+    height: 16px;
+    z-index: 500;
+    right: 24px;
+    top: 24px;
+}
+.fancybox-opened .fancybox-skin.modal_menu_skin{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 @media (min-width: 1200px){
     .container{
         max-width: 1200px;
     }
 }
 @media (max-width: 769px) {
+
+    /*modal menu*/
+    .modal_menu{
+        max-width: 320px;
+        padding: 60px 25px 25px 25px;
+        background: #F2CD84;
+    }
+    .modal_menu_img,
+    .modal_menu_info,
+    .modal_menu_container{
+        display: block;
+    }
+    .modal_menu_info{
+        padding-left: 0;
+    }
+    .modal_menu_title p{
+        font-size: 13px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 0;
+        color: #180004;
+        font-weight: 700;
+    }
+    .modal_menu_descr{
+        padding-top: 10px;
+    }
+    .modal_menu_descr-title{
+        color: #180004;
+    }
+    .modal_menu_descr-text{
+        line-height: 20px;
+        color: #180004;
+    }
+
+    .modal_menu_props{
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #180004;
+    }
+    .modal_menu_props .prop_item{
+        -webkit-flex-basis: unset;
+        -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+        color: #180004;
+    }
+    .modal_menu_prices{
+        padding-top: 7px;
+    }
+    .modal_menu_prices .old_price span:last-child{
+        font-size: 14px;
+    }
+    .new_price{
+        background: #180004;
+    }
+    .new_price span{
+        color: #F2CD84;
+    }
+    .old_price span{
+        color: #180004;
+    }
+    .modal_close{
+        background: url(../../src/img_fid/close_mob.svg);
+    }
+    /**/
+
     header:after{
         background: url(../../src/img_fid/fidel_mobheader.png) 0 0/cover no-repeat;
         height: 500px;

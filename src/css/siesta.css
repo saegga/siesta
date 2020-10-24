@@ -1417,6 +1417,7 @@ footer{
     font-size: 13px;
 }
 .modal_menu_prices{
+    position: relative;
     padding-top: 5px;
 }
 .modal_menu_prices .old_price span:last-child{
@@ -1449,6 +1450,9 @@ footer{
     right: 24px;
     top: 24px;
 }
+.fancybox-opened .fancybox-skin.modal_menu_skin{
+    box-shadow: none;
+}
 
 /**/
 
@@ -1479,6 +1483,7 @@ footer{
         padding-bottom: 5px;
         text-transform: uppercase;
         border-bottom: 0;
+        font-weight: 700;
     }
     .modal_menu_descr{
         padding-top: 10px;

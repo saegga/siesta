@@ -198,4 +198,79 @@ $(document).ready(function () {
         var w1 = $('.mob_open_insta').width();
         $('.mob_open_insta').css({'height' : w1});
     });
+
+
+    $('.eye').on('click', function () {
+       $.fancybox(html, {
+           padding: 0,
+           closeBtn: false,
+           helpers : {
+               overlay : {
+                   css : {
+                       'background' : 'transparent',
+                   }
+               }
+           },
+           tpl: {
+               wrap : "<div class=\"fancybox-wrap\" tabIndex=\"-1\"><div class=\"fancybox-skin modal_menu_skin\"><div class=\"fancybox-outer\"><div class=\"fancybox-inner\"></div></div></div></div>",
+           }
+       });
+    });
+
+
+
+    var html = `<div class="modal_menu">
+    <a href="" class="modal_close"></a>
+    <div class="modal_menu_container">
+        <div class="modal_menu_title d-block d-md-none">
+            <p>Кольца кальмара</p>
+        </div>
+        <div class="modal_menu_img">
+            <a href=""><img src="src/img_siesta/modal1.png" alt=""></a>
+        </div>
+        <div class="modal_menu_info">
+            <div class="modal_menu_title d-none d-md-block">
+                <p>Кольца кальмара</p>
+            </div>
+            <div class="modal_menu_prices d-none d-md-block">
+                <div class="old_price">
+                    <span>Цена</span>
+                    <span>154,21 руб.</span>
+                </div>
+<!--                <div class="new_price">-->
+<!--                    <span>Цена</span>-->
+<!--                    <span>154,21 руб.</span>-->
+<!--                </div>-->
+            </div>
+            <div class="modal_menu_descr">
+                <div class="modal_menu_descr-title">
+                    Описание
+                </div>
+                <div class="modal_menu_descr-text">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut consequuntur corporis cum distinctio, exercitationem id in minima minus neque perferendis
+                    possimus quisquam ratione saepe tempore tenetur ut veniam voluptatum? Accusantium ad quod rerum.
+                    Consequatur dicta esse et magnam modi, natus,
+                    necessitatibus, non nostrum praesentium provident quaerat sapiente soluta temporibus voluptas.
+                </div>
+                <div class="modal_menu_props">
+                    <div class="prop_item">Белки: 152</div>
+                    <div class="prop_item">Жиры: 152</div>
+                    <div class="prop_item">Углеводы: 152</div>
+                </div>
+            </div>
+            <div class="modal_menu_prices d-block d-md-none">
+                <div class="old_price">
+                    <span>Цена</span>
+                    <span>154,21 руб.</span>
+                </div>
+                <!--                <div class="new_price">-->
+                <!--                    <span>Цена</span>-->
+                <!--                    <span>154,21 руб.</span>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+</div>`;
 });

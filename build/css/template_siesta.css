@@ -1489,6 +1489,94 @@ footer{
     background-color: #180004;
     color: #F2CD84;
 }
+
+/* modal cat item */
+
+.modal_menu{
+    position: relative;
+    padding: 50px;
+    max-width: 850px;
+    border: 1px solid;
+    background: #494949;
+    margin: 0 auto;
+}
+.modal_menu_container{
+    /*position: relative;*/
+    display: table;
+    width: 100%;
+}
+.modal_menu_img,
+.modal_menu_info{
+    display: table-cell;
+    vertical-align: top;
+    max-width: 370px;
+}
+.modal_menu_img img{
+    max-width: 100%;
+}
+.modal_menu_info{
+    padding-left: 30px;
+}
+
+.modal_menu_title p{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #F9B605;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F9B605;
+}
+.modal_menu_descr{
+    padding-top: 25px;
+    font-family: 'Exo 2', sans-serif;
+}
+.modal_menu_descr-text{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+}
+.modal_menu_prices{
+    padding-top: 5px;
+}
+.modal_menu_prices .old_price span:last-child{
+    color: #fff;
+    font-size: 18px;
+}
+.modal_menu_descr-title{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+.modal_menu_props{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+.modal_menu_props .prop_item{
+    -webkit-flex-basis: 33%;
+    -ms-flex-preferred-size: 33%;
+    flex-basis: 33%;
+    color: #F9B605;
+    font-weight: 700;
+}
+.modal_close{
+    position: absolute;
+    display: inline-block;
+    background: url(../../src/img_siesta/close_modal.svg);
+    width: 16px;
+    height: 16px;
+    z-index: 500;
+    right: 24px;
+    top: 24px;
+}
+
+/**/
+
 /*media fidel*/
 
 @media (min-width: 1200px){
@@ -1497,6 +1585,13 @@ footer{
     }
 }
 @media (max-width: 769px) {
+
+    /*modal menu*/
+
+
+
+    /**/
+
     header{
         height: 93px;
     }
@@ -1611,10 +1706,8 @@ footer{
     }
 
     .specmenu_items.open{
-        -webkit-border-bottom-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        -webkit-border-bottom-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        /*border-bottom-left-radius: 20px;*/
+        /*border-bottom-right-radius: 20px;*/
         height: auto;
         border: none;
         overflow: visible;
@@ -1955,7 +2048,7 @@ footer{
         background-color: #000;
     }
     .reviews_statistic{
-        width: 320px;
+        width: 300px;
         margin: 0 auto;
         position: relative;
         top: 45px;

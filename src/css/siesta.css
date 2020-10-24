@@ -1466,6 +1466,9 @@ footer{
     .count_specmenu_slider{
         display: block;
     }
+    .specmenu_prices{
+        padding-top: 0;
+    }
     .specmenu_prices .eye{
         top: 100%;
         transform: translateY(-120%);
@@ -1587,7 +1590,7 @@ footer{
         display: table;
     }
     .mob_show_menu{
-        margin-top: 35px;
+        margin-top: 40px;
         text-align: center;
     }
     .about_facts_container{
@@ -1598,26 +1601,29 @@ footer{
         background: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
     }
     .about_facts_section{
-        background-color: #F2CD84;
         padding-top: 0;
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .about_facts-title{
         width: 100%;
         padding-left: 10px;
         float: unset;
+        padding-top: 40px;
     }
     .about_facts-title .num_facts{
         width: 33%;
         font-size: 290px;
         line-height: 120px;
         overflow: visible;
+        color: #E11E34;
     }
     .about_facts-title span:last-child{
+        position: relative;
         color: #180004;
         padding-top: 40px;
         padding-left: 10px;
+        z-index: 500;
     }
     .about_facts-title span{
         display: inline-block;
@@ -1648,6 +1654,9 @@ footer{
     }
     .about_facts-slider{
         width: 100%;
+    }
+    about_facts-slider.slick-slider{
+        z-index: 100;
     }
     .about_facts-slider-wrap{
         position: relative;
@@ -1713,9 +1722,7 @@ footer{
     .about_facts-slider-wrap:after{
         display: none;
     }
-    .about_facts_section{
-        margin-top: 30px;
-    }
+
     .about_facts_section:after{
         content: '';
         position: absolute;
@@ -1723,21 +1730,20 @@ footer{
         height: 552px;
         width: 100%;
         z-index: -1;
-        background: url(../../src/img_fid/facts_border.svg) no-repeat;
     }
     .about_facts_section:before{
         content: '';
         position: absolute;
-        top: -25px;
-        height: 552px;
+        top: 0px;
+        height: 694px;
         width: 100%;
-        z-index: -1;
-        background: url(../../src/img_fid/facts_border.svg) no-repeat;
+        z-index: 10;
+        background: url(../../src/img_siesta/mob_facts_fon.svg) no-repeat;
         background-size: contain;
     }
 
     .news_onmain{
-        margin-top: 100px;
+        margin-top: 0px;
         padding-left: 5px;
     }
     .news_onmain:after{

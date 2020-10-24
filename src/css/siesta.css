@@ -1104,8 +1104,8 @@ header:after{
 .more_us_order{
     display: inline-block;
     width: 270px;
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     text-transform: uppercase;
     font-family: 'Exo 2', sans-serif;
     font-style: normal;
@@ -1486,35 +1486,54 @@ footer{
     }
 
     .specmenu_items.open{
+        position: relative;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         height: auto;
         border: none;
+        overflow: visible;
     }
 
     .specmenu_items.open ul{
         /*display: block;*/
-        height: 100%;
+        height: unset;
         background-color: #fff;
-
+        padding-top: 20px;
     }
 
     .specmenu_items.open .specmenu_current{
+        position: relative;
         background: #fff;
         color: #494949;
-
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
     }
-
+    .specmenu_items.open .specmenu_current:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 90%;
+        height: 1px;
+        background: #6F6F6E;
+        transform: translateX(-50%);
+    }
     .specmenu_items.open .specmenu_current:after{
         background: url(../../src/img_fid/mob_arr_menu_black.svg);
     }
 
     .specmenu_items ul{
         /*display: none;*/
+        position: absolute;
+        left: 0;
+        width: 100%;
         height: 0;
         padding: 0 30px;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
+        z-index: 100;
+        background: #fff;
+        overflow: hidden;
     }
 
     .specmenu_items ul li{
@@ -1845,7 +1864,7 @@ footer{
     .reviews_slider-container{
         position: relative;
         background:  #494949;
-        padding-bottom: 177px;
+        padding-bottom: 200px;
     }
     .reviews_title{
         padding-left: 0;
@@ -1952,12 +1971,18 @@ footer{
     }
 
     .map_section{
-        top: -125px;
-        margin-bottom: -125px;
+        top: -145px;
+        margin-bottom: -145px;
         height: unset;
+        background-color: transparent;
+        padding-top: 10px;
+        margin-top: 0;
+        padding-bottom: 0;
     }
     .map_wrap{
         display: block;
+        height: 100%;
+        overflow: unset;
     }
     .map_block{
         height: 250px;
@@ -1971,6 +1996,7 @@ footer{
     }
     .more_us .more_us_title{
         font-size: 36px;
+        background: #121212;
     }
     .map_section .container{
         padding: 0 10px;
@@ -2007,7 +2033,11 @@ footer{
 
     .more_us{
         display: block;
-        padding: 25px 0 0px;
+        padding-top: 15px;
+    }
+    .more_us.container{
+        padding-left: 0;
+        padding-right: 0;
     }
     .more_us > p{
         text-align: center;
@@ -2025,11 +2055,11 @@ footer{
     }
     .more_us-item span{
         display: block;
-        margin-left: 0;
         text-align: center;
         padding-top: 10px;
-        max-width: unset;
-        font-size: 10px;
+        font-size: 12px;
+        max-width: 85%;
+        margin: 0 auto;
     }
     .more_us_img img{
         width: 36px;
@@ -2043,7 +2073,8 @@ footer{
         width: 100%;
     }
     .instagram_section{
-        margin-top: 40px;
+        margin-top: 10px;
+        background: #121212;
     }
     .instagram_section .container{
         padding: 0 10px;
@@ -2091,16 +2122,34 @@ footer{
         font-family: 'Rubik Regular', sans-serif;
         font-size: 10px;
     }
+    .wrap_main_footer{
+        position: relative;
+    }
+    .wrap_main_footer:before{
+        content: '';
+        background: #121212;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: -50px;
+        z-index: -1;
+    }
     .footer_container{
         flex-flow: column;
         align-items: center;
-        padding: 25px 15px;
+        padding: 20px 15px;
+    }
+    footer{
+        background: #121212;
+    }
+    .socials a{
+        background: transparent;
     }
     .company_name{
         max-width: unset;
         padding-top: 25px;
         font-size: 10px;
-        color: #fff;
+        color: #d0d0d0;
     }
 
     .dev{

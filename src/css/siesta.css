@@ -1739,7 +1739,7 @@ footer{
         width: 100%;
         z-index: 10;
         background: url(../../src/img_siesta/mob_facts_fon.svg) no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     .news_onmain{
@@ -1749,6 +1749,7 @@ footer{
     .news_onmain:after{
         height: 550px;
         background-size: cover;
+        background: url(../../src/img_siesta/mob_news_fon.png);
     }
     .news_item{
         width: unset;

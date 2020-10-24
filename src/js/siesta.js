@@ -30,6 +30,16 @@ $(document).ready(function () {
             $(this).parent(".specmenu_items").removeClass("open");
         }
 
+        var menu =  $(".specmenu_items").find("ul");
+        $(menu).css({"height" : "auto"});
+
+        var hMenu = $(menu).outerHeight();
+
+        $(menu).css({"height" : "0"});
+
+        $(menu).css({"padding-top" : "10px"});
+        $(menu).animate({'height' : hMenu}, 200);
+
     });
 
     $('.down_arr').on('click', function () {

@@ -228,7 +228,7 @@ header:after{
     cursor: pointer;
     position: absolute;
     left: 50%;
-    background: url(../../src/img_siesta/down_arr_fon.svg);
+    background: url(../../src/img_siesta/down_arr2.svg);
     z-index: 500;
     width: 85px;
     height: 115px;
@@ -239,14 +239,6 @@ header:after{
     transform: translateX(-50%);
 }
 
-.down_arr img{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
 /*form*/
 .container.order_form{
     position: relative;
@@ -1548,8 +1540,9 @@ footer{
         position: relative;
         height: 18px;
         overflow: hidden;
-        top: 55px;
-        background: none;
+        top: 85px;
+        background: url(../../src/img_siesta/down_arr_mob.svg) no-repeat;
+        background-position: bottom;
     }
     .specmenu{
         padding-top: 0;
@@ -1561,6 +1554,7 @@ footer{
         padding-bottom: 10px;
     }
     .specmenu_items{
+        position: relative;
         height: 60px;
         overflow: hidden;
         border: 1px solid #FFFFFF;
@@ -1617,7 +1611,6 @@ footer{
     }
 
     .specmenu_items.open{
-        position: relative;
         -webkit-border-bottom-left-radius: 20px;
         border-bottom-left-radius: 20px;
         -webkit-border-bottom-right-radius: 20px;
@@ -1629,9 +1622,9 @@ footer{
 
     .specmenu_items.open ul{
         /*display: block;*/
-        height: unset;
+        /*height: unset;*/
         background-color: #fff;
-        padding-top: 20px;
+        /*visibility: visible;*/
     }
 
     .specmenu_items.open .specmenu_current{
@@ -1663,9 +1656,10 @@ footer{
         /*display: none;*/
         position: absolute;
         left: 0;
-        width: 100%;
         height: 0;
+        width: 100%;
         padding: 0 30px;
+        /*padding-top: 20px;*/
         -webkit-border-bottom-left-radius: 30px;
         border-bottom-left-radius: 30px;
         -webkit-border-bottom-right-radius: 30px;
@@ -1673,6 +1667,7 @@ footer{
         z-index: 100;
         background: #fff;
         overflow: hidden;
+        /*visibility: hidden;*/
     }
 
     .specmenu_items ul li{

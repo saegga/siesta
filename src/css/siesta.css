@@ -1437,6 +1437,7 @@ footer{
     flex-basis: 33%;
     color: #F9B605;
     font-weight: 700;
+    font-size: 13px;
 }
 .modal_close{
     position: absolute;
@@ -1461,9 +1462,47 @@ footer{
 @media (max-width: 769px) {
 
     /*modal menu*/
+    .modal_menu{
+        max-width: 320px;
+        padding: 60px 25px 25px 25px;
+    }
+    .modal_menu_img,
+    .modal_menu_info,
+    .modal_menu_container{
+        display: block;
+    }
+    .modal_menu_info{
+        padding-left: 0;
+    }
+    .modal_menu_title p{
+        font-size: 13px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 0;
+    }
+    .modal_menu_descr{
+        padding-top: 10px;
+    }
+    .modal_menu_descr-text{
+        line-height: 20px;
+    }
 
-
-
+    .modal_menu_props{
+        justify-content: space-between;
+        /*flex-basis: unset;*/
+        padding-top: 15px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #F9B605;
+    }
+    .modal_menu_props .prop_item{
+        flex-basis: unset;
+    }
+    .modal_menu_prices{
+        padding-top: 7px;
+    }
+    .modal_menu_prices .old_price span:last-child{
+        font-size: 14px;
+    }
     /**/
 
     header{

@@ -23,13 +23,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.specmenu_current ').on('click', function () {
-        if(!$(this).parent(".specmenu_items").hasClass("open")){
-            $(this).parent(".specmenu_items").addClass("open");
-        }else{
-            $(this).parent(".specmenu_items").removeClass("open");
-        }
-
+    function expandMenu(){
         var menu =  $(".specmenu_items").find("ul");
         $(menu).css({"height" : "auto"});
 
@@ -38,7 +32,35 @@ $(document).ready(function () {
         $(menu).css({"height" : "0"});
 
         $(menu).css({"padding-top" : "10px"});
-        $(menu).animate({'height' : hMenu}, 200);
+        $(menu).animate({'height' : hMenu}, 50);
+    }
+
+    function hideMenu(){
+        var menu =  $(".specmenu_items").find("ul");
+        $(menu).animate({"height" : "0"}, 50);
+        $(menu).css({"padding-top" : "0"});
+    }
+
+    $('.specmenu_current ').on('click', function () {
+        if(!$(this).parent(".specmenu_items").hasClass("open")){
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".specmenu_items").addClass("open");
+
+                }, 50
+            );
+            expandMenu();
+        }else{
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".specmenu_items").removeClass("open");
+
+                }, 450
+            );
+            hideMenu();
+        }
 
     });
 

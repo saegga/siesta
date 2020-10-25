@@ -84,20 +84,26 @@ $(document).ready(function () {
 
 
        if(!$($this).hasClass("open")){
-           $($this).addClass("open");
-           $($this).find(".vacancy_text").css({"height" : "100%"});
+           
+            $($this).addClass("open");
+            
+            $($this).find(".vacancy_text").css({"height" : "unset"});
+            $($this).css({"oveflow" : "visible"});
+            $($this).find(".vacancy_text").css({"padding" : "0 25px 25px"});
 
-           var h = $($this).find(".vacancy_text").outerHeight();
-           $($this).find(".vacancy_text").css({"height" : "0"});
+            var h = $($this).find(".vacancy_text").outerHeight();
+            $($this).find(".vacancy_text").css({"height" : "0"});
+            $($this).find(".vacancy_text").animate({"height" : h});
 
-           $($this).find(".vacancy_text").animate({"height" : h});
+            $($this).find(".vacancy_name").addClass("open");
 
        }else{
+         $($this).find(".vacancy_text").animate({"height" : "0", "padding" : "0 25px 0 25px"});
+         $($this).find(".vacancy_name").removeClass("open");
+        
            setTimeout(function () {
-               $($this).removeClass("open");
-           }, 250)
-
-           $($this).find(".vacancy_text").animate({"height" : "0"});
+              $($this).removeClass("open");
+           }, 300)
        }
     });
 

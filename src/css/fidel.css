@@ -337,10 +337,11 @@ ul, p{
 .vacancy_item{
     position: relative;
     height: 50px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     border: 1px solid #F2CD84;
     border-radius: 30px;
     margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 .vacancy_name{
     position: relative;
@@ -356,7 +357,11 @@ ul, p{
     line-height: 160%;
     color: #180004;
     background: #F2F2F2;
-    padding: 0 25px 25px;
+    /*padding: 0 25px 25px;*/
+    height: 0;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .vacancy_name:after{
     content: '';
@@ -367,6 +372,7 @@ ul, p{
     height: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 0.5s ease;
 }
 .vacancy_item.open{
     border: 1px solid #180004;
@@ -383,10 +389,15 @@ ul, p{
 }
 .vacancy_item.open .vacancy_name:after{
     background: url(../../src/img_fid/black_down.svg);
+    
 }
+
+.vacancy_item .vacancy_name.open:after{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
 .vacancy_item.open .vacancy_text{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+
 }
 .page_h1{
     margin: 30px 0;

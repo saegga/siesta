@@ -41,7 +41,7 @@ $(document).ready(function () {
         $(menu).css({"padding-top" : "0"});
     }
 
-    $('.specmenu_current ').on('click', function () {
+    $('.specmenu_current').on('click', function () {
         if(!$(this).parent(".specmenu_items").hasClass("open")){
             var $this = this;
             setTimeout(
@@ -63,6 +63,48 @@ $(document).ready(function () {
         }
 
     });
+
+    function expandMenuCatalog(){
+        var menu =  $(".horiz_menu").find("ul");
+        $(menu).css({"height" : "auto"});
+
+        var hMenu = $(menu).outerHeight();
+
+        $(menu).css({"height" : "0"});
+
+        $(menu).css({"padding-top" : "10px"});
+        $(menu).animate({'height' : hMenu}, 50);
+    }
+
+    function hideMenuCatalog(){
+        var menu =  $(".horiz_menu").find("ul");
+        $(menu).animate({"height" : "0"}, 50);
+        $(menu).css({"padding-top" : "0"});
+    }
+
+    $('.horiz_menu_current').on('click', function () {
+        if(!$(this).parent(".horiz_menu").hasClass("open")){
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".horiz_menu").addClass("open");
+
+                }, 50
+            );
+            expandMenuCatalog();
+        }else{
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".horiz_menu").removeClass("open");
+
+                }, 450
+            );
+            hideMenuCatalog();
+        }
+
+    });
+
 
     $('.down_arr').on('click', function () {
         $('body, html').animate({

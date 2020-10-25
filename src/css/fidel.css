@@ -337,7 +337,6 @@ ul, p{
 .vacancy_item{
     position: relative;
     height: 50px;
-    /*overflow: hidden;*/
     border: 1px solid #F2CD84;
     border-radius: 30px;
     margin-bottom: 20px;
@@ -362,6 +361,7 @@ ul, p{
 
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    overflow: hidden;
 }
 .vacancy_name:after{
     content: '';

@@ -208,6 +208,67 @@ ul, p{
     text-align: center;
     line-height: 26px;
 }
+
+/*news_list*/
+.news_list_item{
+    display: table;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.news_list_img{
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 20px;
+    width: 200px;
+}
+.news_list_img img{
+    max-width: 100%;
+}
+.news_list_info{
+    display: table-cell;
+    vertical-align: top;
+}
+.news_list_title{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-bottom: 1px solid #D0D0D0;
+}
+.news_list_descr{
+    padding-top: 5px;
+}
+.news_list_date{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 10px;
+    color: #D0D0D0;
+}
+.news_list_text{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    color: #F2F2F2;
+    padding-top: 10px;
+}
+.news_list_more{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 10px;
+    color: #F2CD84;
+}
+.news_list_more:after{
+    content: '';
+    display: inline-block;
+    background: url(../../src/img_fid/more.svg) no-repeat;
+    width: 8px;
+    height: 7px;
+    margin-left: 10px;
+}
+.news_list_more:hover{
+    color: #F2CD84;
+}
+
 /* bread */
 .breadcrumbs{
     /*background: unset;*/
@@ -231,6 +292,7 @@ h1{
     font-weight: 500;
     font-size: 36px;
     color: #F2CD84;
+    margin-bottom: 0;
 }
 header.page:after{
     display: none;
@@ -1739,6 +1801,9 @@ footer{
 }
 @media (max-width: 769px) {
 
+    .page_h1{
+        text-align: center;
+    }
     /*hor menu*/
     .horiz_menu{
         position: relative;
@@ -1849,6 +1914,22 @@ footer{
         padding: 0 25px;
     }
 
+    /*news_list*/
+
+    .news_list_item,
+    .news_list_img,
+    .news_list_info{
+        display: block;
+    }
+    .news_list_img{
+        width: 100%;
+    }
+    .news_list_img img{
+        width: 100%;
+    }
+    .news_list_item{
+        margin-bottom: 40px;
+    }
     /*modal menu*/
     .modal_menu{
         max-width: 320px;
@@ -1916,7 +1997,9 @@ footer{
         background: url(../../src/img_fid/close_mob.svg);
     }
     /**/
-
+    header.page{
+        height: 89px;
+    }
     header:after{
         background: url(../../src/img_fid/fidel_mobheader.png) 0 0/cover no-repeat;
         height: 500px;

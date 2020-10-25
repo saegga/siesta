@@ -302,6 +302,92 @@ ul, p{
 }
 /**/
 
+/*about*/
+
+.about_title{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D0D0D0;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.about_block{
+    margin-top: 20px;
+}
+.about_block{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    line-height: 160%;
+    color: #F2F2F2;
+}
+.about_block img{
+    max-width: 100%;
+}
+/*contacts*/
+
+.contact_page.map_section{
+    top: 0;
+    margin-bottom: 0;
+}
+
+/* vacancy*/
+
+.vacancy_list{
+
+}
+.vacancy_item{
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid #F2CD84;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.vacancy_name{
+    position: relative;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0 25px;
+}
+.vacancy_text{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    line-height: 160%;
+    color: #180004;
+    background: #F2F2F2;
+    padding: 0 25px 25px;
+}
+.vacancy_name:after{
+    content: '';
+    position: absolute;
+    right: 25px;
+    background: url(../../src/img_fid/yellow_down.svg);
+    width: 20px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vacancy_item.open{
+    border: 1px solid #180004;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: visible;
+    height: 100%;
+}
+.vacancy_item.open .vacancy_name{
+    color: #180004;
+    background: #F2F2F2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.vacancy_item.open .vacancy_name:after{
+    background: url(../../src/img_fid/black_down.svg);
+}
+.vacancy_item.open .vacancy_text{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 .page_h1{
     margin: 30px 0;
 }
@@ -1201,7 +1287,7 @@ header:after{
     width: 47%;
     background: #494949;
     border-radius: 20px 5px 5px 20px;
-    z-index: 100;
+    z-index: 2;
     padding: 45px 0 0 75px;
 }
 .adress_block:before{
@@ -1541,7 +1627,7 @@ footer{
     width: 100%;
     height: 0%;
     background: #F2CD84;
-    z-index: 1;
+    z-index: 3;
     transition: height .5s ease;
     overflow: hidden;
 }

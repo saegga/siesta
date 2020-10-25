@@ -78,6 +78,29 @@ $(document).ready(function () {
         }, 300)
     });
 
+    $('.vacancy_item').on('click', function () {
+        $this = this;
+
+
+
+       if(!$($this).hasClass("open")){
+           $($this).addClass("open");
+           $($this).find(".vacancy_text").css({"height" : "100%"});
+
+           var h = $($this).find(".vacancy_text").outerHeight();
+           $($this).find(".vacancy_text").css({"height" : "0"});
+
+           $($this).find(".vacancy_text").animate({"height" : h});
+
+       }else{
+           setTimeout(function () {
+               $($this).removeClass("open");
+           }, 250)
+
+           $($this).find(".vacancy_text").animate({"height" : "0"});
+       }
+    });
+
     var specMenuSlider = $('.specmenu_slider');
 
 

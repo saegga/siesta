@@ -23,13 +23,53 @@ $(document).ready(function () {
         }
     });
 
+    function expandMenu(){
+        var menu =  $(".horiz_menu").find("ul");
+        $(menu).css({"height" : "auto"});
+
+        var hMenu = $(menu).outerHeight();
+
+        $(menu).css({"height" : "0"});
+
+        $(menu).css({"padding-top" : "10px"});
+        $(menu).animate({'height' : hMenu}, 50);
+    }
+
+    function hideMenu(){
+        var menu =  $(".horiz_menu").find("ul");
+        $(menu).animate({"height" : "0"}, 50);
+        $(menu).css({"padding-top" : "0"});
+    }
+
+    $('.horiz_menu_current').on('click', function () {
+        if(!$(this).parent(".horiz_menu").hasClass("open")){
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".horiz_menu").addClass("open");
+
+                }, 50
+            );
+            expandMenu();
+        }else{
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".horiz_menu").removeClass("open");
+
+                }, 450
+            );
+            hideMenu();
+        }
+
+    });
+
     $('.specmenu_current ').on('click', function () {
         if(!$(this).parent(".specmenu_items").hasClass("open")){
             $(this).parent(".specmenu_items").addClass("open");
         }else{
             $(this).parent(".specmenu_items").removeClass("open");
         }
-
     });
 
     $('.down_arr').on('click', function () {

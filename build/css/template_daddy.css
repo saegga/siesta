@@ -2615,6 +2615,7 @@ footer{
         text-align: center;
     }
     .reviews_title-top{
+        color: #135911;
         font-size: 64px;
         font-weight: 400;
         padding-top: 10px;
@@ -2623,9 +2624,10 @@ footer{
         display: block;
         position: static;
         padding-top: 10px;
-        color: #fff;
+        color: #180004;
         font-size: 24px;
         font-weight: 500;
+        font-family: 'Exo 2', sans-serif;
     }
 
     .reviews_slider{
@@ -2633,7 +2635,7 @@ footer{
     }
     .count_review_slider{
         display: block;
-        color: #F9B605;
+        color: #135911;
     }
     .slider_reviews-arrow button.left-arrow{
         left: -15px;
@@ -2643,18 +2645,7 @@ footer{
         right: -15px;
         top: 20%;
     }
-    .slider_reviews-arrow button.right-arrow i{
-        background: url(../../src/img_siesta/black_arr.svg);
-    }
-    .slider_reviews-arrow button.left-arrow i{
-        background: url(../../src/img_siesta/black_arr.svg);
-    }
 
-    .slider_reviews-arrow button.left-arrow,
-    .slider_reviews-arrow button.right-arrow{
-        background-color: transparent;
-        border: 1px solid #fff;
-    }
     .reviews_slider{
         width: 100%;
     }
@@ -2662,22 +2653,20 @@ footer{
         padding-top: 25px;
         padding-bottom: 25px;
         font-weight: 400;
-        color: #fff;
+        color: #180004;
     }
     .reviews_text{
-        color: #fff;
+        color: #180004;
         font-weight: 500;
         text-align: center;
         font-size: 13px;
         line-height: 17px;
         margin: 0 30px;
         max-width: unset;
+        font-family: 'Exo 2', sans-serif;
     }
     .reviews_title{
         margin-bottom: 30px;
-    }
-    .reviews_title-top{
-        color: #F9B605;
     }
     .reviews_slider-wrap{
         display: -webkit-box;
@@ -2708,7 +2697,8 @@ footer{
         -webkit-transform: unset;
         -ms-transform: unset;
         transform: unset;
-        background-color: #F9B605;
+        background-color: transparent;
+        border: 1px solid #135911;
     }
     .slider_reviews-arrow button.right-arrow{
         top: 0;
@@ -2717,14 +2707,20 @@ footer{
         -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
         transform: rotate(-180deg);
-        background-color: #F9B605;
+        background-color: transparent;
+        border: 1px solid #135911;
     }
     .slider_reviews-arrow button.left-arrow i{
-        background: url(../../src/img_fid/slider_arr_black.svg);
+        background: url(../../src/img_daddy/slider_left.svg);
     }
     .slider_reviews-arrow button.right-arrow i{
-        background: url(../../src/img_fid/slider_arr_black.svg);
+        background: url(../../src/img_daddy/slider_left.svg);
     }
+     .slider_reviews-arrow button:hover.left-arrow i,
+     .slider_reviews-arrow button:hover.right-arrow i
+     {
+        background: url(../../src/img_daddy/slider_left.svg);
+     }
     .reviews_slider{
         padding-top: 30px;
     }
@@ -2756,7 +2752,6 @@ footer{
     }
     .more_us .more_us_title{
         font-size: 36px;
-        background: #121212;
     }
     .map_section .container{
         padding: 0 10px;
@@ -2839,19 +2834,19 @@ footer{
     }
     .instagram_section{
         margin-top: 10px;
-        background: #121212;
     }
     .instagram_section .container{
         padding: 0 10px;
     }
     .instagram_block{
-        border: 2px solid #f2cd84;
+        border: 2px solid #135911;
         padding: 13px;
     }
     .instagram_title{
         line-height: 1;
         padding-bottom: 25px;
         font-size: 20px;
+        font-family: 'Rubik Regular';
     }
     .instagram_item{
         width: 33.33%;
@@ -2862,11 +2857,10 @@ footer{
     .mob_open_insta{
         position: relative;
         width: 33%;
-        background: #F2CD84;
-        background: url(../../src/img_fid/insta_open_mob.svg);
+        background: url(../../src/img_daddy/insta_open.svg);
         background-position: 50% 30%;
         background-repeat: no-repeat;
-        background-color: #F2CD84;
+        background-color: #135911;
     }
     .mob_open_insta:after{
         content: 'Открыть';
@@ -2874,7 +2868,7 @@ footer{
         top: 65%;
         left: 50%;
         text-transform: uppercase;
-        color: #000;
+        color: #fff;
         -webkit-transform: translate(-50%, -65%);
         -ms-transform: translate(-50%, -65%);
         transform: translate(-50%, -65%);
@@ -2890,13 +2884,7 @@ footer{
         font-size: 10px;
     }
     .wrap_main_footer:before{
-        content: '';
-        background: #121212;
-        position: absolute;
-        width: 100%;
-        height: 50px;
-        top: -50px;
-        z-index: -1;
+        display: none;
     }
     .footer_container{
         -webkit-box-orient: vertical;
@@ -2911,16 +2899,21 @@ footer{
         padding: 20px 15px;
     }
     footer{
-        background: #121212;
+        height: unset;
+        background: unset;
     }
     .socials a{
-        background: transparent;
+        background: #A5BE3F;
     }
     .company_name{
         max-width: unset;
         padding-top: 25px;
         font-size: 10px;
-        color: #DDD16F;
+        color: #494949;
+    }
+    .dev > p{
+        font-size: 10px;
+        color:  #494949;
     }
 
     .dev{

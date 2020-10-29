@@ -328,18 +328,22 @@ header:after{
     margin-left: 25px;
     height: 40px;
 }
+.header_right_top .call_us .btn{
+     padding: 0 27px;
+     letter-spacing: 0px;
+}
 .daddy.btn{
     display: inline-block;
     color: #135911;
     font-family: 'Gotham Pro', sans-serif;
     text-align: center;
-    padding: 0 33px;
+   
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
     line-height: 40px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    
     border-radius: 30px;
     background-color: #A5BE3F;
 }
@@ -354,6 +358,9 @@ header:after{
 .header_right_bottom{
     clear: both;
     margin-left: 50px;
+}
+.header_left_bottom{
+    padding-top: 5px;
 }
 .header_left_bottom,
 .header_right_bottom{
@@ -393,7 +400,7 @@ header .container{
     position: relative;
     height: 850px;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 235px;
     z-index: 0;
 }
 /*.welcom_section*/
@@ -430,14 +437,14 @@ header .container{
 .welcom_second{
     position: relative;
     font-family: 'Corinthia', sans-serif;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 48px;
+    line-height: 48px;
     text-align: center;
     color: #fff;
     transform: rotate(-5deg);
-    padding-top: 10px;
+    padding-top: 20px;
     z-index: 500;
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
 }
 .down_arr{

@@ -303,8 +303,31 @@ header:after{
     background-color: #A5BE3F;
     margin-right: 42px;
 }
+.header_socials a > svg{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	fill: #135911;
+}
+.header_socials a.vk > svg{
+	width: 12px;
+	height: 8px;
+}
+.header_socials a.facebook > svg{
+	width: 7px;
+	height: 11px;
+}
+.header_socials a.insta > svg{
+	width: 12px;
+	height: 11px;
+}
+
 .header_socials a:hover{
     background-color: #135911;
+}
+.header_socials a:hover svg{
+	fill: #A5BE3F;
 }
 .header_socials a:last-child{
     margin-right: 0;
@@ -337,7 +360,7 @@ header:after{
     color: #135911;
     font-family: 'Gotham Pro', sans-serif;
     text-align: center;
-   
+   	padding: 0 33px;
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
@@ -1463,17 +1486,34 @@ footer{
     background: #A5BE3F;
 }
 .socials a:hover{
-    background-color: #A5BE3F;
+    background-color: #135911;
 }
 .socials a:last-child{
     margin-right: 0;
 }
-.socials a > img{
+.socials a > svg{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: #15402F;
 }
+.socials a:hover > svg{
+	fill: #A5BE3F;
+}
+.socials a.soc_vk > svg{
+	width: 12px;
+	height: 8px;
+}
+.socials a.soc_facebook > svg{
+	width: 7px;
+	height: 11px;
+}
+.socials a.soc_insta > svg{
+	width: 12px;
+	height: 11px;
+}
+
 .dev > p{
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 12px;

@@ -541,7 +541,7 @@ header .container{
     font-family: 'Exo 2 ', sans-serif;
     font-weight: 700;
     font-size: 14px;
-    color: #F2CD84;
+    color: #494949;
 }
 .count_review_slider{
     display: none;
@@ -611,7 +611,7 @@ header .container{
     vertical-align: middle;
 }
 .specmenu_slider_title{
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
     font-weight: 500;
     font-size: 36px;
     color: #180004;
@@ -744,7 +744,16 @@ header .container{
     font-size: 14px;
 }
 /**/
-
+.facts_list_bottom{
+    position: absolute;
+    bottom: -10%;
+    right: 15%;
+}
+.facts_list_top{
+    position: absolute;
+    top: -2%;
+    left: 21%;
+}
 .about_facts_section{
     position: relative;
     padding-top: 80px;
@@ -937,6 +946,11 @@ header .container{
     /*left: 50%;*/
     /*top: 60%;*/
     /*transform: translate(-50%, -50%);*/
+}
+.news_right_fon{
+    position: absolute;
+    right: 0;
+    top: -80%;
 }
 .news_title span{
     position: relative;
@@ -1504,8 +1518,8 @@ footer{
     padding-right: 25px;
 }
 .m_logo{
-    padding-top: 5px;
-    max-width: 72px;
+    padding-top: 20px;
+    max-width: 146px;
 }
 .m_logo img{
     max-width: 100%;
@@ -1518,14 +1532,16 @@ footer{
 }
 .m_whatsup a{
     display: inline-block;
-    width: 40px;
+    width: 23px;
     height: 40px;
-    background: url(../../src/img_siesta/wa_mob.svg);
+    background: url(../../src/img_daddy/wa_mob.svg);
     background-position: center;
     transition: background 0.5s ease;
+    background-repeat: no-repeat;
 }
 .m_whatsup.open a{
     background: url(../../src/img_fid/wa_black.svg);
+    background-repeat: no-repeat;
 }
 
 .mmenu_btn{
@@ -1537,7 +1553,7 @@ footer{
 .mmenu_btn .line{
     width: 20px;
     height: 2px;
-    background: #140002;
+    background: #A5BE3F;
     margin-bottom: 5px;
     -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1563,7 +1579,7 @@ footer{
     top: 0;
     width: 100%;
     height: 0%;
-    background: #F9B605;
+    background: #A5BE3F;
     z-index: 1;
     transition: height .5s ease;
     overflow: hidden;
@@ -1582,8 +1598,8 @@ footer{
     padding-bottom: 0;
 }
 .mmenu_layer ul li a{
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 600;
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
     font-size: 13px;
     text-align: center;
 
@@ -1598,7 +1614,7 @@ footer{
     display: inline-block;
     width: 23px;
     height: 23px;
-    border: 1px solid #180004;
+    border: 1px solid #135911;
     border-radius: 50%;
     margin-right: 42px;
 }
@@ -1619,7 +1635,11 @@ footer{
     background-color: #180004;
     color: #F2CD84;
 }
-
+.daddy.btn.mmenu{
+    background: #135911;
+    color: #fff;
+    height: 40px;
+}
 /* modal cat item */
 
 .modal_menu{
@@ -1707,6 +1727,11 @@ footer{
     position: absolute;
     right: 0;
     top: -3px;
+}
+.review_left_fon{
+    position: absolute;
+    left: 0;
+    top: -43%;
 }
 .wrapfooter_left_fon{
     position: absolute;
@@ -1876,7 +1901,7 @@ footer{
         height: 93px;
     }
     header:after{
-        background: url(../../src/img_siesta/mob_head.png) 0 0/cover no-repeat;
+        background: url(../../src/img_daddy/header_mob.png) 0 0/cover no-repeat;
         height: 500px;
         top: 0;
     }
@@ -1887,12 +1912,12 @@ footer{
     }
     .welcom_first{
         padding-top: 43px;
-        font-size: 22px;
+        font-size: 30px;
         line-height: 28px;
     }
 
     .welcom_second{
-        max-width: 55%;
+        max-width: 70%;
         margin: 0 auto;
         font-size: 30px;
         line-height: 35px;
@@ -1905,18 +1930,19 @@ footer{
         position: absolute;
         width: 305px;
         height: 226px;
-        background: url(../../src/img_siesta/head_mob.svg);
-        -webkit-transform: translateX(-52%);
-        -ms-transform: translateX(-52%);
         transform: translateX(-50%);
         background-repeat: no-repeat;
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.67) 4.69%, rgba(17, 17, 17, 0.67) 55.73%, rgba(17, 17, 17, 0.67) 100%);
+        box-shadow: 0px 18px 47px 27px rgba(17, 17, 17, 0.74);
+        border-radius: 500px;
+
     }
     .down_arr{
         position: relative;
         height: 18px;
         overflow: hidden;
         top: 85px;
-        background: url(../../src/img_siesta/down_arr_mob.svg) no-repeat;
+        background: url(../../src/img_daddy/down_arr.svg) no-repeat;
         background-position: bottom;
     }
     .specmenu{
@@ -1932,11 +1958,11 @@ footer{
         position: relative;
         height: 60px;
         overflow: hidden;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #135911;
         box-sizing: border-box;
         border-radius: 30px;
         transition: all .5s ease;
-        background: #fff;
+        background: transparent;
     }
     .specmenu_items ul{
         transition: all .5s ease;
@@ -1946,8 +1972,8 @@ footer{
         position: relative;
         height: 60px;
         line-height: 60px;
-        color: #494949;
-        font-family: 'Exo 2', sans-serif;
+        color: #135911;
+        font-family: 'Gotham Pro', sans-serif;
         font-weight: bold;
         font-size: 13px;
         text-transform: uppercase;
@@ -1957,7 +1983,7 @@ footer{
         display: block;
     }
     .specmenu_prices{
-        padding-top: 0;
+        padding-top: 17px;
     }
     .specmenu_prices .eye{
         top: 100%;
@@ -2077,7 +2103,7 @@ footer{
         right: -30px;
     }
     .specmenu_item_name{
-        color: #E8C47F;
+        color: #135911;
         float: left;
         font-size: 13px;
         font-weight: 700;
@@ -2100,8 +2126,13 @@ footer{
         display: table;
     }
     .mob_show_menu{
+        height: 50px;
         margin-top: 40px;
         text-align: center;
+    }
+    .mob_show_menu .btn{
+        height: 50px;
+        line-height: 50px;
     }
     .about_facts_container{
         padding-bottom: 65px;
@@ -2127,6 +2158,7 @@ footer{
         line-height: 120px;
         overflow: visible;
         color: #E11E34;
+        text-shadow: none;
     }
     .about_facts-title span:last-child{
         position: relative;
@@ -2146,8 +2178,8 @@ footer{
         width: 67%;
         position: relative;
         left: 0px;
-        color: #fff;
-        font-size: 20px;
+        font-size: 19px;
+        color: #135911;
     }
     .about_facts-img{
         position: relative;
@@ -2166,7 +2198,7 @@ footer{
         width: 100%;
         z-index: 500;
     }
-    about_facts-slider.slick-slider{
+    .about_facts-slider.slick-slider{
         z-index: 100;
     }
     .about_facts-slider-wrap{
@@ -2181,7 +2213,7 @@ footer{
     .about_facts-slider-title{
         font-size: 20px;
         line-height: 24px;
-        color: #180004;
+        color: #135911;
         text-align: center;
         max-width: 80%;
         margin: 0 auto;
@@ -2246,10 +2278,10 @@ footer{
         content: '';
         position: absolute;
         top: 0px;
-        height: 694px;
+        height: 709px;
         width: 100%;
         z-index: 10;
-        background: url(../../src/img_siesta/mob_facts_fon.svg) no-repeat;
+        background: url(../../src/img_daddy/facts_mob.png) no-repeat;
         background-size: cover;
     }
 
@@ -2257,12 +2289,11 @@ footer{
         margin-top: 0px;
         padding-left: 5px;
         padding-top: 15px;
+        min-height: unset;
     }
     .news_onmain:after{
-        height: 490px;
-        background-size: cover;
-        background: url(../../src/img_siesta/mob_news_fon.png);
-        top: -70px;
+        display: none;
+        background: none;
     }
     .news_item{
         width: unset;
@@ -2273,12 +2304,16 @@ footer{
         display: none;
     }
     .news_title span:first-child{
+        color: #135911;
         transform: rotate(-7.43deg);
+        text-shadow: -2px 3px 6px #FFFFFF;
     }
     .news_title span:last-child{
         line-height: 1;
-        font-size: 31px;
+        font-size: 36px;
         letter-spacing: 1.1px;
+        color: #180004;
+        font-family: 'Exo 2', sans-serif;
     }
     .news_item.slick-slide{
         width: 265px;
@@ -2291,9 +2326,12 @@ footer{
         background: #000;
         border: 1px solid #000;
     }
+    .news_slider .slick-dots li > button{
+        border: 1px solid #180004;
+    }
     /*review*/
     .reviews{
-        margin-top: 5px;
+        padding-top: 5px;
     }
     .reviews_container{
         margin-top: 0;
@@ -2309,10 +2347,13 @@ footer{
         top: 45px;
         z-index: 100;
         padding: 0 5px;
+        box-shadow: inset 0px 4px 5px rgba(255, 255, 255, 0.34);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     .reviews_statistic p{
-        padding-left: 75px;
+        padding-left: 0px;
         padding-top: 56px;
+        font-size: 16px;
     }
     .review_topleft_fon{
         width: 70px;
@@ -2354,7 +2395,7 @@ footer{
     }
     .reviews_slider-container{
         position: relative;
-        background:  #494949;
+        background:  #DCD36A;
         padding-bottom: 200px;
     }
     .reviews_title{

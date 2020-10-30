@@ -59,7 +59,6 @@ ul, p{
 .horiz_menu ul{
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
     list-style: none;
     padding: 0 25px;
@@ -70,8 +69,6 @@ ul, p{
 }
 .horiz_menu ul li{
     display: inline-block;
-    /*line-height: 54px;*/
-    /*width: 50px;*/
     vertical-align: middle;
     padding-right: 115px;
 }
@@ -256,7 +253,7 @@ header:after{
     position: absolute;
     content: '';
     width: 100%;
-    height: 950px;
+    height: 860px;
     background-size: cover;
     background: url("../../src/img_daddy/header_fon.png") no-repeat;
     left: 0;
@@ -298,10 +295,10 @@ header:after{
     display: inline-block;
     width: 24px;
     height: 23px;
-    /*border: 1px solid #140002;*/
     border-radius: 50%;
     background-color: #A5BE3F;
     margin-right: 42px;
+    transition: background 0.3s ease;
 }
 .header_socials a > svg{
 	position: absolute;
@@ -421,7 +418,7 @@ header .container{
 
 .welcom_section{
     position: relative;
-    height: 850px;
+    height: 753px;
     margin: 0 auto;
     padding-top: 235px;
     z-index: 0;
@@ -429,7 +426,7 @@ header .container{
 /*.welcom_section*/
 .welcom_text:before{
     content: '';
-    top: 70px;
+    top: 130px;
     left: 50%;
     position: absolute;
     width: 403px;
@@ -461,11 +458,11 @@ header .container{
     position: relative;
     font-family: 'Corinthia', sans-serif;
     font-size: 48px;
-    line-height: 48px;
+    line-height: 52px;
     text-align: center;
     color: #fff;
     transform: rotate(-5deg);
-    padding-top: 20px;
+    padding-top: 18px;
     z-index: 500;
     max-width: 70%;
     margin: 0 auto;
@@ -479,7 +476,8 @@ header .container{
     width: 85px;
     height: 115px;
     background-repeat: no-repeat;
-    bottom: 20px;
+    background-position: center;
+    bottom: 10px;
     transform: translateX(-50%);
 }
 
@@ -489,8 +487,8 @@ header .container{
 }
 .table_order{
     position: absolute;
-    right: 0;
-    top: 120px;
+    right: 10px;
+    top: 35px;
     filter: drop-shadow(7px 6px 8px rgba(0, 0, 0, 0.25));
 }
 .table_order.daddy{
@@ -509,12 +507,11 @@ header .container{
 }
 .table_order.daddy .table_order_title{
     font-family: "Gotham Pro", sans-serif;
-    text-align: center;
     text-transform: uppercase;
     font-size: 28px;
     color: #135911;
-    padding-top: 62px;
-    line-height: 40px;
+    padding-top: 50px;
+    line-height: 35px;
     max-width: 50%;
     margin: 0 auto;
 }
@@ -522,7 +519,10 @@ header .container{
     font-family: 'Gotham Pro', sans-serif;
     font-size: 14px;
     color: #180004;
-    text-align: center;
+    /*text-align: center;*/
+    display: block;
+    max-width: 35%;
+    margin: 0 auto;
 }
 .table_order.daddy .table_order_here{
     font-family: 'Corinthia', sans-serif;
@@ -530,11 +530,12 @@ header .container{
     color: #180004;
     transform: rotate(-4.95deg);
     text-align: center;
+    line-height: 55px;
 }
 .table_order_link.daddy{
     background: #15402F;
     color: #fff;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .table_order_link{
     display: block;
@@ -554,7 +555,6 @@ header .container{
 
 .menu_section{
     position: relative;
-    padding-bottom: 22px;
 }
 .menu_section_fon{
     position: absolute;
@@ -585,7 +585,7 @@ header .container{
     color: #494949;
 }
 .specmenu{
-    padding-top: 35px;
+    padding-top: 20px;
 }
 .specmenu_title{
     font-family: 'Corinthia', sans-serif;
@@ -610,6 +610,9 @@ header .container{
 .specmenu_items ul li{
     padding-bottom: 55px;
 }
+.specmenu_items ul li:last-child{
+    padding-bottom: 0;
+}
 .specmenu_items ul li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -617,6 +620,7 @@ header .container{
     font-family: 'Gotham Pro', sans-serif;
     font-weight: 700;
     font-size: 13px;
+    transition: color 0.3s ease;
 }
 .specmenu_items ul li a:hover{
     color: #135911;
@@ -632,6 +636,7 @@ header .container{
     background: url(../../src/img_daddy/specmenu_arr.svg) no-repeat;
     padding-right: 40px;
     vertical-align: middle;
+    transition: background 0.3s ease;
 }
 .specmenu_right{
     position: relative;
@@ -713,7 +718,7 @@ header .container{
 }
 .specmenu_prices{
     position: relative;
-    padding-top: 8px;
+    padding-top: 16px;
     border-top: 1px solid #135911;
     /*margin-top: 35px;*/
 }
@@ -727,9 +732,9 @@ header .container{
 }
 .specmenu_prices .eye{
     position: absolute;
-    top: 50%;
+    top: 70%;
     right: 0;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
 }
 .specmenu_eyes img{
     margin-left: auto;
@@ -746,11 +751,7 @@ header .container{
     color: #180004;
 
 }
-/*.old_price span:last-child{*/
-/*    text-transform: uppercase;*/
-/*    font-size: 14px;*/
-/*    font-weight: 700;*/
-/*}*/
+
 .new_price{
     position: absolute;
     top: 0;
@@ -773,16 +774,29 @@ header .container{
     font-weight: bold;
     font-size: 14px;
 }
+.menu_left_fon{
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+.show_all_menu{
+    margin-top: 40px;
+}
+.show_all_menu .daddy.btn{
+    height: 50px;
+    line-height: 50px;
+}
+
 /**/
 .facts_list_bottom{
     position: absolute;
     bottom: -10%;
-    right: 15%;
+    right: 8%;
 }
 .facts_list_top{
     position: absolute;
     top: -2%;
-    left: 21%;
+    left: 16%;
 }
 .about_facts_section{
     position: relative;
@@ -818,8 +832,8 @@ header .container{
     max-width: 300px;
     line-height: 120%;
     vertical-align: top;
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 45px;
+    padding-left: 10px;
 }
 .about_facts-title .num_facts{
     position: relative;
@@ -836,7 +850,7 @@ header .container{
 .about_facts-photos{
     position: absolute;
     bottom: -65px;
-    left: 20px;
+    left: 5px;
     z-index: 99;
     width: 690px;
 }
@@ -849,7 +863,7 @@ header .container{
     max-width: 657px;
     width: 56%;
     min-height: 545px;
-    padding: 70px 60px 36px 40px;
+    padding: 70px 60px 36px 30px;
 }
 
 .about_facts-slider-wrap:after{
@@ -858,8 +872,8 @@ header .container{
     background: url(../../src/img_daddy/about_facts_fon.svg) no-repeat;
     width: 943px;
     height: 715px;
-    top: -5px;
-    left: -65px;
+    top: -10px;
+    left: -95px;
     z-index: -1;
 }
 .about_facts-slider{
@@ -887,10 +901,14 @@ header .container{
 }
 
 .about_facts-slider .slick-slide{
+    padding-top: 15px;
     outline: none;
 }
 
-.slider_facts-arrow{}
+.slider_facts-arrow{
+    padding-top: 10px;
+    padding-left: 15px;
+}
 .slider_facts-arrow .left-arrow,
 .slider_facts-arrow .right-arrow
 {
@@ -945,8 +963,9 @@ header .container{
 /**/
 .news_onmain{
     position: relative;
-    margin-top: 180px;
+    margin-top: 145px;
     padding-left: 35px;
+    padding-right: 35px;
     padding-top: 40px;
     min-height: 584px;
 }
@@ -965,18 +984,7 @@ header .container{
     position: relative;
     text-align: center;
 }
-.news_title:after{
-    /*content: '';*/
-    /*position: absolute;*/
-    /*background-repeat: no-repeat;*/
-    /*display: block;*/
-    /*width: 466px;*/
-    /*height: 180px;*/
-    /*z-index: 1;*/
-    /*left: 50%;*/
-    /*top: 60%;*/
-    /*transform: translate(-50%, -50%);*/
-}
+
 .news_right_fon{
     position: absolute;
     right: 0;
@@ -993,7 +1001,7 @@ header .container{
     font-family: 'Corinthia', sans-serif;
     font-size: 72px;
     color: #A5BE3F;
-    transform: rotate(-7.43deg) translateX(10px);
+    transform: rotate(-7.43deg) translateX(-30px);
 }
 .news_title span:last-child{
     font-family: 'Gotham Pro', sans-serif;
@@ -1101,11 +1109,11 @@ header .container{
     position: absolute;
     background-image: url(../../src/img_daddy/stat_fon.svg);
     background-size: contain;
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
     background-repeat: no-repeat;
     top: 0;
-    right: 0;
+    right: 30px;
     padding: 0 25px;
 }
 .reviews_statistic p{
@@ -1114,7 +1122,7 @@ header .container{
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.4px;
-    padding-top: 52px;
+    padding-top: 65px;
     padding-left: 0px;
     line-height: 14px;
     text-align: center;
@@ -1234,8 +1242,7 @@ header .container{
 
 .map_section{
     position: relative;
-    margin-top: 75px;
-    /*background-color: #121212;*/
+    margin-top: 95px;
     padding-top: 70px;
     padding-bottom: 10px;
 }
@@ -1342,7 +1349,7 @@ header .container{
     display: flex;
     flex-basis: 25%;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 35px;
 }
 .more_us-items{
@@ -1355,6 +1362,7 @@ header .container{
     display: inline-block;
 }
 .more_us .more_us_title{
+    width: 28%;
     font-family: 'Corinthia', sans-serif;
     font-size: 48px;
     color: #180004;
@@ -1397,20 +1405,17 @@ header .container{
     font-size: 13px;
     text-align: center;
     background: #15402F;
-    /*background: linear-gradient(33.2deg,*/
-    /*#E8C47F 1.93%, #D09B5D 32.45%, #E9C082 37.31%, #F5DBA9 55.06%,*/
-    /*#E7C37F 69.08%, #D5A46A 94.37%, #A87E2D 99.31%);*/
     border-radius: 30px;
     color: #fff;
 }
 .more_us_order:hover{
-    color: #180004;
+    color: #fff;
     text-decoration: none;
 }
 /**/
 .instagram_section{
     position: relative;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .instagram_title{
     font-family: 'Gotham Pro', sans-serif;
@@ -1451,14 +1456,13 @@ footer{
     position: relative;
     height: 80px;
     background-color: #15402F;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .wrap_main_footer{
     position: relative;
 }
-/*footer:after{*/
 
-/*}*/
+
 .footer_container{
     display: flex;
     justify-content: space-between;
@@ -1466,8 +1470,6 @@ footer{
     margin: 0 auto;
     height: 100%;
     align-items: center;
-        /*padding-top: 35px;*/
-        /*padding-bottom: 30px;*/
 }
 .company_name{
     font-size: 12px;
@@ -1480,10 +1482,10 @@ footer{
     display: inline-block;
     width: 24px;
     height: 23px;
-    /*border: 1px solid #F9B605;*/
     border-radius: 50%;
     margin-right: 42px;
     background: #A5BE3F;
+    transition: background 0.3s ease;
 }
 .socials a:hover{
     background-color: #135911;

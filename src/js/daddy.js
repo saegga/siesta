@@ -64,11 +64,44 @@ $(document).ready(function () {
 
     });
 
+    function expandMenuSpec(){
+        var menu =  $(".specmenu_items").find("ul");
+        $(menu).css({"height" : "auto"});
+
+        var hMenu = $(menu).outerHeight();
+
+        $(menu).css({"height" : "0"});
+
+        $(menu).css({"padding-top" : "10px"});
+        $(menu).animate({'height' : hMenu}, 50);
+    }
+
+    function hideMenuSpec(){
+        var menu =  $(".specmenu_items").find("ul");
+        $(menu).animate({"height" : "0"}, 50);
+        $(menu).css({"padding-top" : "0"});
+    }
+
+
     $('.specmenu_current ').on('click', function () {
         if(!$(this).parent(".specmenu_items").hasClass("open")){
-            $(this).parent(".specmenu_items").addClass("open");
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".specmenu_items").addClass("open");
+
+                }, 50
+            );
+            expandMenuSpec();
         }else{
-            $(this).parent(".specmenu_items").removeClass("open");
+            var $this = this;
+            setTimeout(
+                function () {
+                    $($this).parent(".specmenu_items").removeClass("open");
+
+                }, 450
+            );
+            hideMenuSpec();
         }
     });
 

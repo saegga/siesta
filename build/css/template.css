@@ -15,6 +15,184 @@
 	font-style: normal;
 }
 
+
+/**/
+
+.auth_form{
+    position: relative;
+	width: 600px;
+    padding: 90px 0 120px 0;
+    background-color: #fff;
+}
+.auth_form_container{
+	width: 290px;
+	margin: 0 auto;
+    text-align: center;
+}
+.auth_title{
+	text-align: center;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 36px;
+	color: #494949;
+    margin-bottom: 50px;
+}
+.inp_field{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+}
+.inp_field input{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #B0B0B0;
+	padding-left: 20px;
+
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+}
+.inp_field.tel{
+    margin-bottom: 20px;
+}
+.inp_field.tel:after{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	background: url(../../src/images/auth_tel.svg);
+	left: 0px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.inp_field.pass:after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: url(../../src/images/auth_pass.svg);
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.inp_field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #B0B0B0;
+}
+.inp_field input::-moz-placeholder { /* Firefox 19+ */
+    color: #B0B0B0;
+}
+.inp_field input:-ms-input-placeholder { /* IE 10+ */
+    color: #B0B0B0;
+}
+.inp_field input:-moz-placeholder { /* Firefox 18- */
+    color: #B0B0B0;
+}
+.auth_form input[type="submit"]{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    width: 270px;
+    background: -o-linear-gradient(309.09deg, #54B991 20.96%, #54B3B9 77.59%);
+    background: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin: 50px auto 0 auto;
+}
+.auth_form .new_pass{
+    display: inline-block;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #009B83;
+
+    border-bottom: 1px solid #009B83;
+    margin-top: 10px;
+}
+.auth_form .new_pass:hover{
+    text-decoration: none;
+}
+.auth_close{
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../src/images/close_auth.svg);
+    right: 25px;
+    top: 25px;
+}
+
+.recover_form{
+    position: relative;
+    width: 600px;
+    background-color: #fff;
+}
+.recover_form .subtitle{
+    color: #494949;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.recover_title{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #494949;
+}
+.recover_container{
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.recover_form .inp_field.tel{
+    display: block;
+    width: 290px;
+    margin: 35px auto 0 auto;
+}
+.recover_form input[type="submit"]{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    width: 270px;
+    background: -o-linear-gradient(309.09deg, #54B991 20.96%, #54B3B9 77.59%);
+    background: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin: 50px auto 0 auto;
+}
+
+.recover_close{
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../src/images/close_auth.svg);
+    right: 25px;
+    top: 25px;
+}
+
 /* first -page*/
 *{
     -webkit-box-sizing: border-box;

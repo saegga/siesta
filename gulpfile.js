@@ -264,7 +264,8 @@ gulp.task('watch', watch);
 
 // запуск тасков в опр порядке, и параллельно - parallel
 gulp.task('build', gulp.series(clean,
-	gulp.parallel(styles, stylesFidel, stylesSiesta ,  stylesOrig, stylesOrigSiesta, stylesDaddy, stylesOrigFidel, stylesOrigDaddy , scriptFidel, scriptSiesta, scriptDaddy , scripts, modern)));
+	gulp.parallel(styles, stylesFidel, stylesSiesta ,  stylesOrig, stylesOrigSiesta, stylesDaddy,
+		stylesOrigFidel, stylesOrigDaddy , scriptFidel, scriptSiesta, scriptDaddy , scripts, modern)));
 // таск запускает по очереди сборку и обновление
 gulp.task('dev', gulp.series('build', 'watch'));
 

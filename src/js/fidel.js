@@ -7,7 +7,9 @@ $(document).ready(function () {
           slidesToScroll: 1,
           arrows: false,
           fade: true,
-          asNavFor: '.schema-nav'
+          asNavFor: '.schema-nav',
+          // rtl: false,
+          //  useTransform: false,
     });
     $('.schema-nav').slick({
           variableWidth: true,
@@ -16,8 +18,12 @@ $(document).ready(function () {
           asNavFor: '.schema-for',
           dots: false,
           arrows: true,
-          centerMode: true,
-          focusOnSelect: true
+          prevArrow: '<button id="prev" type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+          nextArrow: '<button id="next" type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+          // centerMode: true,
+          focusOnSelect: true,
+          // useTransform: false,
+          // rtl: true,
     });
 
     $('.mmenu_btn').on('click', function () {

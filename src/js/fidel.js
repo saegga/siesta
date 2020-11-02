@@ -1,5 +1,25 @@
 $(document).ready(function () {
 
+    /*schema*/
+
+    $('.schema-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.schema-nav'
+    });
+    $('.schema-nav').slick({
+          variableWidth: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          asNavFor: '.schema-for',
+          dots: false,
+          arrows: true,
+          centerMode: true,
+          focusOnSelect: true
+    });
+
     $('.mmenu_btn').on('click', function () {
 
         if(!$(this).hasClass("open")){

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="src/vendor/fancybox-2.1.7/jquery.fancybox.css">
     <script src="src/vendor/fancybox-2.1.7/jquery.fancybox.js"></script>
 
-    <link rel="stylesheet" href="build/css/template_siesta.css">
+    <link rel="stylesheet" href="build/css/style.css">
     <link rel="stylesheet" href="src/css/main.css">
     <!--    <script src="build/js/fidel.js"></script>-->
     <script src="src/js/siesta.js"></script>
@@ -28,65 +28,90 @@
 
 </head>
 
-
-<div class="auth_form">
-    <a href="" class="auth_close"></a>
-    <div class="auth_form_container">
-        <p class="auth_title">Авторизация</p>
-        <form action="">
-            <label class="inp_field tel">
-                <input type="text" placeholder="+7 (888) 444-44-44">
-            </label>
-            <label class="inp_field pass">
-                <input type="text" placeholder="Пароль">
-            </label>
-            <input type="submit" value="Отправить">
-        </form>
-        <a href="" class="new_pass">Восстановить пароль</a>
+<header>
+    <div class="logo_container">
+        <a href="/"><img src="src/images/siesta_logo.svg" alt=""></a>
+    </div>
+</header>
+<div class="auth_page">
+    <img src="src/images/left_fon_auth.png" alt="" class="left_fon_auth d-none d-md-block">
+    <img src="src/images/right_fon_auth.png" alt="" class="right_fon_auth d-none d-md-block">
+<!--     <div class="auth_form">
+        <a href="" class="auth_close"></a>
+        <div class="auth_form_container">
+            <p class="auth_title">Авторизация</p>
+            <form action="">
+                <label class="inp_field tel">
+                    <input type="text" placeholder="+7 (888) 444-44-44">
+                </label>
+                <label class="inp_field pass">
+                    <input type="text" placeholder="Пароль">
+                </label>
+                <input type="submit" value="Отправить">
+            </form>
+            <a href="" class="new_pass">Восстановить пароль</a>
+        </div>
+    </div> -->
+    <div class="recover_form">
+        <a href="" class="recover_close"></a>
+        <div class="recover_container">
+            <p class="recover_title">Восстановить пароль</p>
+            <p class="subtitle">На ваш телефон прийдет новый пароль</p>
+            <form action="">
+                <label class="inp_field tel">
+                    <input type="text" placeholder="+7 (888) 444-44-44">
+                </label>
+                <input type="submit" value="Восстановить">
+            </form>
+        </div>
     </div>
 </div>
 
-<div class="recover_form">
-    <a href="" class="recover_close"></a>
-    <div class="recover_container">
-        <p class="recover_title">Восстановить пароль</p>
-        <p class="subtitle">На ваш телефон прийдет новый пароль</p>
-        <form action="">
-            <label class="inp_field tel">
-                <input type="text" placeholder="+7 (888) 444-44-44">
-            </label>
-            <input type="submit" value="Восстановить">
-        </form>
+<div class="meeting_container">
+    <div class="more_us">
+        <p class="">А еще у нас...</p>
+        <div class="more_us-items">
+            <div class="more_us-item">
+                <div class="more_us_img"><img src="src/images/menu_more.svg" alt=""></div>
+                <span>Отличная кухня</span>
+            </div>
+            <div class="more_us-item">
+                <div class="more_us_img"><img src="src/images/coffe_more.svg" alt=""></div>
+                <span>Дружеская атмосфера</span>
+            </div>
+            <div class="more_us-item">
+                <div class="more_us_img"><img src="src/images/wifi_more.svg" alt=""></div>
+                <span>Шустрый WI FI</span>
+            </div>
+        </div>
     </div>
-</div>
-
-<footer>
-    <div class="container footer_container">
+    </div>
+ </div>
+ <footer>
+    <div class="footer_container">
         <div class="company_name order-2 order-md-1">
             ООО "Сиеста"
             © 2016–2020
         </div>
         <div class="socials order-1 order-md-2">
-            <a href="" target="_blank" class="soc_vk">
-                <img src="src/img_siesta/vk.svg" alt="" class="d-none d-md-block">
-                <img src="src/img_siesta/mob_vk.svg" alt="" class="d-block d-md-none">
-            </a>
-            <a href="" target="_blank" class="soc_facebook">
-                <img src="src/img_siesta/fb.svg" alt="" class="d-none d-md-block">
-                <img src="src/img_siesta/mob_fb.svg" alt="" class="d-block d-md-none">
-            </a>
-            <a href="" target="_blank" class="soc_insta">
-                <img src="src/img_siesta/insta.svg" alt="" class="d-none d-md-block">
-                <img src="src/img_siesta/mob_insta.svg" alt="" class="d-block d-md-none">
-            </a>
+            <a href="" target="_blank" class="soc_vk"><img src="src/images/vk.svg" alt=""></a>
+            <a href="" target="_blank" class="soc_facebook"><img src="src/images/facebook.svg" alt=""></a>
+            <a href="" target="_blank" class="soc_insta"><img src="src/images/insta.svg" alt=""></a>
         </div>
         <div class="dev order-3 order-md-3">
             <p>Разработка</p>
             <a href="" target="_blank"><img src="src/images/sp_dev.svg" alt=""></a>
         </div>
     </div>
-</footer>
-</div>
 
-</body>
-</html>
+    <div class="mobile_footer_sec d-flex d-md-none">
+        <div class="foot_icons">
+            <a href=""> <img src="src/images/foot_fidel.svg" alt=""></a>
+            <a href=""> <img src="src/images/foot_steak.svg" alt=""></a>
+            <a href=""> <img src="src/images/foot_daddy.svg" alt=""></a>
+        </div>
+        <div class="prodile">Профиль</div>
+    </div>
+ </footer>
+ </body>
+ </html>

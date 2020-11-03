@@ -17,12 +17,29 @@
 
 
 /**/
+.auth_page{
+    position: relative;
+}
+.left_fon_auth{
+    position: absolute;
+    left: 0;
+    top: -10%;
+    z-index: 500;
+}
+.right_fon_auth{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    z-index: 500;
+}
 
 .auth_form{
     position: relative;
-	width: 600px;
+	width: 770px;
     padding: 90px 0 120px 0;
     background-color: #fff;
+    margin: 0 auto 25px;
+    border: 1px solid #B0B0B0;
 }
 .auth_form_container{
 	width: 290px;
@@ -131,8 +148,10 @@
 
 .recover_form{
     position: relative;
-    width: 600px;
+    width: 770px;
     background-color: #fff;
+    margin: 0 auto 25px;
+    border: 1px solid #B0B0B0;
 }
 .recover_form .subtitle{
     color: #494949;

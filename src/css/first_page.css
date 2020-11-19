@@ -566,6 +566,100 @@ footer{}
 /**/
 /*media first-page*/
 
+/*lk*/
+body.lk header{
+    position: relative;
+    height: 466px;
+    margin-bottom: -40px;
+}
+header:after{
+    position: absolute;
+    content: '';
+    background: url(../../src/images/fon_lk.png);
+    height: 466px;
+    width: 100%;
+    top: -40px;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 1200px;
+}
+
+.history_top{
+    display: table;
+    width: 100%;
+    padding: 30px 0;
+}
+.history_title,
+.history_all{
+    display: table-cell;
+    vertical-align: middle;
+}
+.history_title{
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #494949;
+}
+.history_all{
+    text-align: right;
+}
+.history_all a{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+    text-decoration-line: underline;
+
+    color: #E11E34;
+}
+.history_list{}
+
+.history_item{
+    display: table;
+    width: 100%;
+    border: 1px solid #D0D0D0;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.history_item:hover,
+.history_item.active{
+    border: 1px solid transparent;
+    border-image: linear-gradient(#54B991 , #54B3B9);
+    border-image-slice: 1;
+}
+.history_item:hover p.chek,
+.history_item:hover p.bonus,
+.history_item.active p.chek,
+.history_item.active p.bonus
+{
+    background-image: linear-gradient(140.91deg, #54B991 20.96%, #54B3B9 77.59%);
+    color: transparent;
+    background-clip: text;
+}
+
+.history_item p{
+    display: table-cell;
+}
+.history_item p.chek{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #494949;
+}
+
+.history_item p.bonus{
+    text-align: right;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+
+    color: #494949;
+}
+.history_item:last_child{
+    margin-bottom: 0;
+}
+
+
 @media (max-width: 1170px){
     .reviews_container,
     .meeting_container,
@@ -574,6 +668,43 @@ footer{}
     }
 }
 @media (max-width: 768px) {
+
+    /*lk*/
+    .history_top{
+        padding-top: 20px;
+        padding-bottom: 15px; 
+    }
+    .history_top,
+    .history_title,
+    .history_all{
+        display: block;
+        text-align: center;
+    }
+    .history_title{
+        font-size: 20px;
+    }
+    .history_item{
+        display: block;
+        padding: 17px 12px 17px 12px;
+    }
+    .history_item p{
+        display: block;
+    }
+    .history_item p.bonus,
+    .history_item p.chek{
+        text-align: center;
+    }
+    .history_item p.chek{
+        font-size: 12px;
+        letter-spacing: -0.3px;
+    }
+    .history_item p.bonus{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .container.lk_history .col-lg-12{
+        padding: 0 10px;
+    }
     .logo_container img{
         margin: 30px auto;
     }

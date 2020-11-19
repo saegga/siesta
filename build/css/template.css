@@ -860,7 +860,7 @@ body.lk header{
     height: 466px;
     margin-bottom: -40px;
 }
-header:after{
+body.lk header:after{
     position: absolute;
     content: '';
     background: url(../../src/images/fon_lk.png);
@@ -868,6 +868,7 @@ header:after{
     width: 100%;
     top: -40px;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 .container{
     max-width: 1200px;
@@ -952,6 +953,47 @@ header:after{
 }
 .history_item:last_child{
     margin-bottom: 0;
+}
+.container.lk_history{
+    position: relative;
+}
+.info_lk{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.bonus_block{
+    float: right;
+    width: 455px;
+    min-height: 280px;
+    border: 20px solid transparent;
+    -webkit-border-image: -webkit-gradient(linear , left top, left bottom , from(#54B991) , to(#54B3B9));
+    -webkit-border-image: linear-gradient(#54B991 , #54B3B9);
+    -o-border-image: -o-linear-gradient(#54B991 , #54B3B9);
+    border-image: -webkit-gradient(linear , left top, left bottom , from(#54B991) , to(#54B3B9));
+    border-image: linear-gradient(#54B991 , #54B3B9);
+    border-image-slice: 1;
+    border-bottom: 0;
+}
+.bonus_block .bonus{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: #494949;
+    padding-top: 80px;
+    padding-left: 90px;
+    line-height: 1;
+}
+.bonus_block .bonus_txt{
+    line-height: 1;
+    font-family: 'Corinthia', sans-serif;
+    font-size: 48px;
+    color: #494949;
+    float: right;
+    padding-right: 100px;
+    -webkit-transform: rotate(-9.04deg);
+    -ms-transform: rotate(-9.04deg);
+    transform: rotate(-9.04deg);
 }
 
 

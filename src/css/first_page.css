@@ -667,6 +667,11 @@ body.lk header:after{
     position: absolute;
     bottom: 0px;
 }
+.info_lk:after{
+    content: '';
+    clear: both;
+    display: table;
+}
 .bonus_block{
     float: right;
     width: 455px;
@@ -675,14 +680,14 @@ body.lk header:after{
     border-image: linear-gradient(#54B991 , #54B3B9);
     border-image-slice: 1;
     border-bottom: 0;
+    padding-top: 80px;
+    padding-left: 90px;
 }
 .bonus_block .bonus{
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
     font-size: 72px;
     color: #494949;
-    padding-top: 80px;
-    padding-left: 90px;
     line-height: 1;
 }
 .bonus_block .bonus_txt{
@@ -694,6 +699,27 @@ body.lk header:after{
     padding-right: 100px;
     transform: rotate(-9.04deg);
 }
+.user_block{
+    max-width: 50%;
+    float: left;
+    padding-left: 85px;
+}
+.user_name{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #494949;
+    line-height: 1;
+}
+.user_tel{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    color: #494949;
+}
+
 
 
 @media (max-width: 1170px){
@@ -706,6 +732,13 @@ body.lk header:after{
 @media (max-width: 768px) {
 
     /*lk*/
+    body.lk header:after{
+        background: url(../../src/images/fon_lk_mob.png) bottom;
+        background-size: cover;
+    }
+    .info_lk{
+        bottom: -40px;
+    }
     .history_top{
         padding-top: 20px;
         padding-bottom: 15px; 
@@ -741,6 +774,37 @@ body.lk header:after{
     .container.lk_history .col-lg-12{
         padding: 0 10px;
     }
+
+    .user_block{
+        text-align: center;
+        float: unset;
+        padding-left: 0;
+        max-width: 100%;
+    }
+    .user_name{
+        font-size: 20px;
+    }
+    .user_tel{
+        font-size: 13px;
+    }
+    .bonus_block{
+        float: unset;
+        width: 100%;
+        border: none;
+        padding-left: 0;
+        padding-top: 60px;   
+    }
+    .bonus_block .bonus{
+        text-align: center;
+        font-size: 48px;
+    }
+    .bonus_block .bonus_txt{
+        float: unset;
+        padding-right: 0;
+        text-align: center;
+        font-size: 36px;
+    }
+    /**/
     .logo_container img{
         margin: 30px auto;
     }
